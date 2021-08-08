@@ -52,7 +52,12 @@ const Photography = () => {
       return (
         <div class="col-lg-4 col-md-6 portfolio-item">
           <div class="portfolio-wrap">
-            <LazyLoadImage className="img-fluid" alt={image} src={image} />
+            <LazyLoadImage
+              className="img-fluid"
+              alt={image}
+              src={image}
+              effect="blur"
+            />
             <div class="portfolio-info">
               <h4>{selectedImageTitle}</h4>
               <div class="portfolio-links">
