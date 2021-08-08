@@ -8,14 +8,14 @@ const CustomNavBar = (props) => {
       class={props.item === "/" ? "header-tops" : "header-tops header-top"}
     >
       <div class="container">
-        <h1>
+        <h1 data-aos="fade-right">
           <Link to="/">{data.name}</Link>
         </h1>
-        <h2>
+        <h2 data-aos="fade-left">
           I'm a passionate <span>{data.profession}</span> from Bangladesh
         </h2>
 
-        <nav class="nav-menu d-none d-lg-block">
+        <nav class="nav-menu d-none d-lg-block" data-aos="fade-up">
           <ul>
             <li class={props.item == "/" ? "active" : ""}>
               <Link to="/">Home</Link>
@@ -44,7 +44,7 @@ const CustomNavBar = (props) => {
           </ul>
         </nav>
 
-        <div class="social-links">
+        <div class="social-links" data-aos="fade-down">
           <a href="#" class="twitter">
             <i class="icofont-twitter"></i>
           </a>

@@ -28,7 +28,7 @@ const Skill = () => {
   });
 
   return (
-    <div class="skills container">
+    <div class="skills container" data-aos="fade-up">
       <div class="section-title">
         <h2>Technical Skills</h2>
       </div>

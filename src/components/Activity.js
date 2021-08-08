@@ -1,12 +1,13 @@
 import data from "../utls/data";
+import AOS from "aos";
 import Service from "./Service";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import { useState } from "react";
 import CustomNavBar from "./CustomNavBar";
 
-
 const Activity = () => {
+  AOS.init();
   const [images, setImage] = useState(null);
 
   const [photoIndex, setPhotoIndex] = useState(0);
@@ -145,22 +146,22 @@ const Activity = () => {
             <p>My extra curricular activities</p>
           </div>
           <div className="row" data-aos="fade-up">
-            <div className="col-lg-6" data-aos="fade-up">
+            <div className="col-lg-6" data-aos="fade-right">
               <h3 className="resume-title">LEADERSHIP</h3>
               {leadItems}
             </div>
-            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-lg-6" data-aos="fade-left" data-aos-delay="100">
               <h3 className="resume-title">EXTRA-CURRICULAR ACTIVITIES</h3>
               {activityItems}
             </div>
           </div>
           <div style={{ height: "20px" }}></div>
-          <div className="services">
+          <div className="services" data-aos="fade-up">
             <h3 className="resume-title">SAUPS Program Photographs</h3>
             <div className="row">{programs}</div>
           </div>
 
-          <div className="services">
+          <div className="services" data-aos="fade-up">
             <h3 className="resume-title">
               Other Photographs Of My Activities{" "}
             </h3>

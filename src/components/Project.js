@@ -52,7 +52,7 @@ const Project = () => {
   if (images.length > 0 && load) {
     imagesDiv = images.map((image) => {
       return (
-        <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="col-lg-4 col-md-6 portfolio-item" data-aos="fade-left">
           <div class="portfolio-wrap">
             <LazyLoadImage className="img-fluid" alt={image} src={image} />
             <div class="portfolio-info">
@@ -79,71 +79,12 @@ const Project = () => {
     });
   }
 
-  // const [images, setImage] = useState(null);
-
-  // const [photoIndex, setPhotoIndex] = useState(0);
-  // const [isOpen, setIsOpen] = useState(false);
-
-  // const projects = data.projects.map((project) => {
-  //   let rm = project.folder.replaceAll(" ", "");
-  //   rm = rm.replaceAll("-", "");
-  //   rm = rm.replaceAll("(", "");
-  //   rm = rm.replaceAll(")", "");
-  //   rm = rm.replaceAll(",", "");
-  //   let filter = ".filter-" + rm;
-  //   console.log(filter);
-  //   return <li data-filter={filter}>{project.folder}</li>;
-  // });
-
-  // const sections = data.projects.map((project) => {
-  //   let rm = project.folder.replaceAll(" ", "");
-  //   rm = rm.replaceAll("-", "");
-  //   rm = rm.replaceAll("(", "");
-  //   rm = rm.replaceAll(")", "");
-  //   rm = rm.replaceAll(",", "");
-  //   const className = `col-lg-4 col-md-6 portfolio-item filter-${rm}`;
-  //   console.log(className);
-  //   // project.files = project.files.sort(() => Math.random() - 0.5);
-  //   const images = project.files.map((image) => {
-  //     return (
-  //       <div class={className}>
-  //         <div class="portfolio-wrap">
-  //           <img src={image} class="img-fluid" alt="" />
-  //           <div class="portfolio-info">
-  //             <h4>{project.folder}</h4>
-
-  //             <div class="portfolio-links">
-  //               <a
-  //                 // href={image}
-  //                 style={{
-  //               cursor: "pointer",
-  //             }}
-  //                 onClick={() => {
-  //               setIsOpen(true);
-  //               setImage(project.files);
-  //               console.log(images);
-  //             }}
-  //                 data-gall="portfolioGallery"
-  //                 class="venobox"
-  //                 title={project.folder}
-  //               >
-  //                 <i class="bx bx-detail"></i>
-  //               </a>
-  //             </div>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     );
-  //   });
-  //   return images;
-  // });
-
   return (
     <>
       <CustomNavBar item="/project" />
-      <section id="project" class="portfolio section-show">
+      <section id="project" class="portfolio section-show" data-aos="fade-up">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title" data-aos="fade-right">
             <h2>Projects</h2>
             <p>My Project Photographs</p>
           </div>

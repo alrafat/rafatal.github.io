@@ -18,8 +18,11 @@ const Photography = () => {
 
   const [load, setLoad] = useState(true);
 
+  let imagesDiv;
+
   const loadImages = () => {
     let x = [];
+    imagesDiv = null;
     data.photography.map((type) => {
       type.files.map((file) => x.push(file));
     });
@@ -36,6 +39,7 @@ const Photography = () => {
       <li
         className={selectedImageTitle === type.folder ? "filter-active" : ""}
         onClick={() => {
+          imagesDiv = null;
           setImages(type.files);
           setSelectedImageTitle(type.folder);
           setLoad(true);
@@ -46,7 +50,6 @@ const Photography = () => {
     );
   });
 
-  let imagesDiv;
   if (images.length > 0 && load) {
     imagesDiv = images.map((image) => {
       return (
@@ -57,6 +60,7 @@ const Photography = () => {
               alt={image}
               src={image}
               effect="blur"
+              data-aos="fade-right"
             />
             <div class="portfolio-info">
               <h4>{selectedImageTitle}</h4>
@@ -85,9 +89,13 @@ const Photography = () => {
   return (
     <>
       <CustomNavBar item="/photography" />
-      <section id="photography" class="portfolio section-show">
+      <section
+        id="photography"
+        class="portfolio section-show"
+        data-aos="fade-up"
+      >
         <div class="container">
-          <div class="section-title">
+          <div class="section-title" data-aos="fade-left">
             <h2>Photography</h2>
             <p>My Photographs</p>
           </div>
@@ -110,7 +118,9 @@ const Photography = () => {
             </div>
           </div>
 
-          <div class="row portfolio-container">{imagesDiv}</div>
+          <div class="row portfolio-container" data-aos="fade-right">
+            {imagesDiv}
+          </div>
           {isOpen && (
             <Lightbox
               mainSrc={selectedImage}

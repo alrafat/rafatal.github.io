@@ -7,8 +7,11 @@ import Portfolio from "../components/Photography";
 import Project from "../components/Project";
 import Resume from "../components/Resume";
 import "./App.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  Aos.init();
   return (
     // <Fade>
     <Switch>

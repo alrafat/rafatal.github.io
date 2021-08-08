@@ -13,7 +13,7 @@ const Interest = () => {
   });
 
   return (
-    <div class="interests container">
+    <div class="interests container" data-aos="fade-up">
       <div class="section-title">
         <h2>Research Interests</h2>
       </div>

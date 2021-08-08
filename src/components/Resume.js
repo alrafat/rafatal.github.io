@@ -181,7 +181,7 @@ const Resume = () => {
   return (
     <>
       <CustomNavBar item="/resume" />
-      <section id="resume" class="resume section-show">
+      <section id="resume" class="resume section-show" data-aos="fade-up">
         <div class="container">
           <div class="section-title">
             <h2>Resume</h2>
@@ -189,8 +189,8 @@ const Resume = () => {
           </div>
 
           <div class="row">
-            <div class="col-lg-6">
-              <h3 class="resume-title">Sumary</h3>
+            <div class="col-lg-6" data-aos="fade-right">
+              <h3 class="resume-title">Summary</h3>
               <div class="resume-item pb-0">
                 <h4>{data.name}</h4>
                 <p>
@@ -208,7 +208,7 @@ const Resume = () => {
               <h3 class="resume-title">Education</h3>
               {eduItems}
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
               <h3 class="resume-title">Professional Experience</h3>
               {expItems}
             </div>
