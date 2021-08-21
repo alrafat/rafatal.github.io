@@ -10,6 +10,7 @@ import "./App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Academic from "../components/Academic.";
+import ResearchExperience from "../components/ResearchExperience";
 
 function App() {
   Aos.init();
@@ -18,6 +19,7 @@ function App() {
     <Switch>
       <Route path="/" exact render={() => <CustomNavBar item="/" />} />
       <Route path="/academic" component={Academic} />
+      <Route path="/research-experience" component={ResearchExperience} />
       <Route path="/contact" component={Contact} />
       <Route path="/resume" component={Resume} />
       <Route path="/about" component={About} />

@@ -13,8 +13,8 @@ const About = () => {
         <AboutMe />
         {/* <Count /> */}
 
-        <Interest />
-        <Skill />
+        {/* <Interest /> */}
+        {/* <Skill /> */}
         {/* <Testimonial /> */}
       </section>
     </>
