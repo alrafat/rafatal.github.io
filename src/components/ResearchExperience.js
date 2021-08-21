@@ -64,6 +64,33 @@ const ResearchExperience = () => {
     );
   });
 
+  const thesis = data.theses.map((thesis) => {
+    const thesisDetail = thesis.detail.map((item) => {
+      return (
+        <li>
+          <p>{item}</p>
+        </li>
+      );
+    });
+
+    return (
+      <li>
+        <div style={{ padding: "5px" }}>
+          <p
+            style={{ fontFamily: "sans-serif", fontSize: "19px" }}
+            className="test-items"
+          >
+            {thesis.title}
+          </p>
+
+          <p>{thesis.supervisor}</p>
+
+          <ul>{thesisDetail}</ul>
+        </div>
+      </li>
+    );
+  });
+
   return (
     <>
       <CustomNavBar item="/research-experience" />
@@ -80,7 +107,6 @@ const ResearchExperience = () => {
               <div class="section-title">
                 <h2>Research Interests</h2>
               </div>
-
               <div class="row">{researchInterests}</div>
             </div>
           </div>
@@ -113,7 +139,7 @@ const ResearchExperience = () => {
                 <h2>GRADUATE/ MS THESIS</h2>
               </div>
               <hr></hr>
-              <ul>{papers}</ul>
+              <ul>{thesis}</ul>
             </div>
           </div>
         </div>

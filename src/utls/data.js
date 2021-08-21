@@ -600,6 +600,19 @@ const data = {
       venue: "University of Liberal Arts Bangladesh (ULAB), Dhaka, Bangladesh",
     },
   ],
+  theses: [
+    {
+      title: "Status of edible insects in some ethnic groups of Bangladesh",
+      supervisor:
+        "Supervisor: Dr. Md. Fuad Mondal, Associate Professor, Department of Entomology, Sylhet Agricultural University, Sylhet",
+      detail: [
+        "Information of 150 respondents from six ethnic groups were taken including perceptions and socio-economic factors regarding insects consumption",
+
+        "Data of total 36 consumed insect species including medicinally used 9 species with their consumption characteristics were made",
+        "7 top most constraints regarding entomophagy were identified",
+      ],
+    },
+  ],
   memberships: [
     {
       institute:

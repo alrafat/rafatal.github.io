@@ -23,13 +23,7 @@ const CustomNavBar = (props) => {
             <li class={props.item == "/academic" ? "active" : ""}>
               <Link to="/academic">Academic</Link>
             </li>
-            <li
-              class={
-                props.item == "/research-experience"
-                  ? "research-experience"
-                  : ""
-              }
-            >
+            <li class={props.item == "/research-experience" ? "active" : ""}>
               <Link to="/research-experience">Research Experience</Link>
             </li>
 
