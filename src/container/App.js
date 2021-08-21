@@ -9,6 +9,7 @@ import Resume from "../components/Resume";
 import "./App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Academic from "../components/Academic.";
 
 function App() {
   Aos.init();
@@ -16,6 +17,7 @@ function App() {
     // <Fade>
     <Switch>
       <Route path="/" exact render={() => <CustomNavBar item="/" />} />
+      <Route path="/academic" component={Academic} />
       <Route path="/contact" component={Contact} />
       <Route path="/resume" component={Resume} />
       <Route path="/about" component={About} />

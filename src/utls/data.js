@@ -490,46 +490,15 @@ const data = {
   technical_skills: [
     {
       type: "Application Software",
-      skills: [
-        {
-          name: "MS Word",
-          expertize: "100",
-        },
-        {
-          name: "MS excel",
-          expertize: "100",
-        },
-        {
-          name: "MS POWERPOINT",
-          expertize: "100",
-        },
-      ],
+      skills: "MS Word, MS excel, MS POWERPOINT",
     },
     {
       type: "Statistical Software",
-      skills: [
-        {
-          name: "SPSS",
-          expertize: "80",
-        },
-        {
-          name: "R SOFTWARE",
-          expertize: "90",
-        },
-      ],
+      skills: "SPSS, R SOFTWARE",
     },
     {
       type: "Image Processing Software",
-      skills: [
-        {
-          name: "ADOBE PHOTOSHOP",
-          expertize: "50",
-        },
-        {
-          name: "ADOBE ILLUSTRATOR",
-          expertize: "60",
-        },
-      ],
+      skills: "ADOBE PHOTOSHOP, ADOBE ILLUSTRATOR",
     },
   ],
 
@@ -655,6 +624,11 @@ const data = {
   photography: photography,
   projects: projects,
   programsSAUPS: programsSAUPS,
+  facebook: "",
+  linkedIn: "",
+  twitter: "",
+  instagram: "",
+  skype: "",
 };
 
 export default data;

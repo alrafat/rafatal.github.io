@@ -20,6 +20,9 @@ const CustomNavBar = (props) => {
             <li class={props.item == "/" ? "active" : ""}>
               <Link to="/">Home</Link>
             </li>
+            <li class={props.item == "/academic" ? "active" : ""}>
+              <Link to="/academic">Academic</Link>
+            </li>
             <li class={props.item == "/about" ? "active" : ""}>
               <Link to="/about">About</Link>
             </li>
@@ -45,19 +48,19 @@ const CustomNavBar = (props) => {
         </nav>
 
         <div class="social-links" data-aos="fade-down">
-          <a href="#" class="twitter">
+          <a href={data.twitter} target="blank" class="twitter">
             <i class="icofont-twitter"></i>
           </a>
-          <a href="#" class="facebook">
+          <a href={data.facebook} target="blank" class="facebook">
             <i class="icofont-facebook"></i>
           </a>
-          <a href="#" class="instagram">
+          <a href={data.instagram} target="blank" class="instagram">
             <i class="icofont-instagram"></i>
           </a>
-          <a href="#" class="google-plus">
+          <a href={data.skype} target="blank" class="google-plus">
             <i class="icofont-skype"></i>
           </a>
-          <a href="#" class="linkedin">
+          <a href={data.linkedIn} target="blank" class="linkedin">
             <i class="icofont-linkedin"></i>
           </a>
         </div>
