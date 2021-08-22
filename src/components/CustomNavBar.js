@@ -11,9 +11,7 @@ const CustomNavBar = (props) => {
         <h1 data-aos="fade-right">
           <Link to="/">{data.name}</Link>
         </h1>
-        <h2 data-aos="fade-left">
-          I'm a passionate <span>{data.profession}</span> from Bangladesh
-        </h2>
+        <h2 data-aos="fade-left">{data.profession}</h2>
 
         <nav class="nav-menu d-none d-lg-block" data-aos="fade-up">
           <ul>
@@ -27,9 +25,9 @@ const CustomNavBar = (props) => {
               <Link to="/research-experience">Research Experience</Link>
             </li>
 
-            <li class={props.item == "/resume" ? "active" : ""}>
+            {/* <li class={props.item == "/resume" ? "active" : ""}>
               <Link to="/resume">Resume</Link>
-            </li>
+            </li> */}
 
             <li class={props.item == "/project" ? "active" : ""}>
               <Link to="/project">Projects</Link>
@@ -51,17 +49,17 @@ const CustomNavBar = (props) => {
               <Link to="/activity">Extra Curricular</Link>
             </li>
 
-            <li class={props.item == "/photography" ? "active" : ""}>
-              <Link to="/photography">Gallery</Link>
+            <li class={props.item == "/gallery" ? "active" : ""}>
+              <Link to="/gallery">Gallery</Link>
             </li>
 
             {/* <li class={props.item == "/contact" ? "active" : ""}>
               <Link to="/contact">Contact</Link>
             </li> */}
 
-            {/* <li class={props.item == "/about" ? "active" : ""}>
+            <li class={props.item == "/about" ? "active" : ""}>
               <Link to="/about">About</Link>
-            </li> */}
+            </li>
           </ul>
         </nav>
 

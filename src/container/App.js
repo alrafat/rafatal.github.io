@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 import Academic from "../components/Academic.";
 import ResearchExperience from "../components/ResearchExperience";
 import Experience from "../components/Experience";
+import Gallery from "../components/Gallery";
 
 function App() {
   Aos.init();
@@ -23,6 +24,8 @@ function App() {
       <Route path="/research-experience" component={ResearchExperience} />
 
       <Route path="/experiences" component={Experience} />
+
+      <Route path="/gallery" component={Gallery} />
 
       <Route path="/contact" component={Contact} />
       <Route path="/resume" component={Resume} />

@@ -65,103 +65,6 @@ const activityPhotos = [
   },
 ];
 
-const photography = [
-  {
-    folder: "Art Photographs",
-    files: [
-      "assets/photos/photography/Art Photographs/AP-01.JPG",
-      "assets/photos/photography/Art Photographs/AP-02.JPG",
-      "assets/photos/photography/Art Photographs/AP-03.jpg",
-      "assets/photos/photography/Art Photographs/AP-04.JPG",
-      "assets/photos/photography/Art Photographs/AP-05.JPG",
-      "assets/photos/photography/Art Photographs/AP-06.JPG",
-      "assets/photos/photography/Art Photographs/AP-07.JPG",
-      "assets/photos/photography/Art Photographs/AP-08.JPG",
-      "assets/photos/photography/Art Photographs/AP-09.JPG",
-      "assets/photos/photography/Art Photographs/AP-10.jpg",
-      "assets/photos/photography/Art Photographs/AP-11.JPG",
-      "assets/photos/photography/Art Photographs/AP-12.jpg",
-      "assets/photos/photography/Art Photographs/AP-13.JPG",
-      "assets/photos/photography/Art Photographs/AP-14.JPG",
-      "assets/photos/photography/Art Photographs/AP-15.JPG",
-      "assets/photos/photography/Art Photographs/AP-16.jpg",
-      "assets/photos/photography/Art Photographs/AP-17.JPG",
-      "assets/photos/photography/Art Photographs/AP-18.JPG",
-      "assets/photos/photography/Art Photographs/AP-19.JPG",
-      "assets/photos/photography/Art Photographs/AP-20.JPG",
-      "assets/photos/photography/Art Photographs/AP-21.JPG",
-      "assets/photos/photography/Art Photographs/AP-22.JPG",
-      "assets/photos/photography/Art Photographs/AP-23.JPG",
-      "assets/photos/photography/Art Photographs/AP-24.JPG",
-      "assets/photos/photography/Art Photographs/AP-25.JPG",
-      "assets/photos/photography/Art Photographs/AP-26.JPG",
-      "assets/photos/photography/Art Photographs/AP-27.JPG",
-      "assets/photos/photography/Art Photographs/AP-28.jpg",
-      "assets/photos/photography/Art Photographs/AP-29.jpg",
-      "assets/photos/photography/Art Photographs/AP-30.JPG",
-      "assets/photos/photography/Art Photographs/AP-31.JPG",
-      "assets/photos/photography/Art Photographs/AP-32.JPG",
-      "assets/photos/photography/Art Photographs/AP-33.JPG",
-      "assets/photos/photography/Art Photographs/AP-34.jpg",
-      "assets/photos/photography/Art Photographs/AP-35.jpg",
-      "assets/photos/photography/Art Photographs/AP-36.JPG",
-      "assets/photos/photography/Art Photographs/AP-37.JPG",
-      "assets/photos/photography/Art Photographs/AP-38.JPG",
-      "assets/photos/photography/Art Photographs/AP-39.JPG",
-      "assets/photos/photography/Art Photographs/AP-40.JPG",
-      "assets/photos/photography/Art Photographs/AP-41.JPG",
-      "assets/photos/photography/Art Photographs/AP-42.JPG",
-      "assets/photos/photography/Art Photographs/AP-43.JPG",
-      "assets/photos/photography/Art Photographs/AP-44.JPG",
-      "assets/photos/photography/Art Photographs/AP-45.JPG",
-      "assets/photos/photography/Art Photographs/AP-46.JPG",
-      "assets/photos/photography/Art Photographs/AP-47.JPG",
-    ],
-  },
-  {
-    folder: "My Exhibited Art Photographs",
-    files: [
-      "assets/photos/photography/My Exhibited Art Photographs/MEAT-01.JPG",
-      "assets/photos/photography/My Exhibited Art Photographs/MEAT-02.JPG",
-      "assets/photos/photography/My Exhibited Art Photographs/MEAT-03.JPG",
-      "assets/photos/photography/My Exhibited Art Photographs/MEAT-04.JPG",
-      "assets/photos/photography/My Exhibited Art Photographs/MEAT-05.JPG",
-      "assets/photos/photography/My Exhibited Art Photographs/MEAT-06.jpg",
-    ],
-  },
-  {
-    folder: "Photo Story-(AAGOMONI-The Advent)",
-    files: [
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-01.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-02.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-03.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-04.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-05.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-06.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-07.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-08.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-09.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-10.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-11.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-12.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-13.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-14.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-15.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-16.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-17.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-18.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-19.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-20.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-21.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-22.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-23.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-24.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-25.JPG",
-      "assets/photos/photography/Photo Story-(AAGOMONI-The Advent)/PS-26.JPG",
-    ],
-  },
-];
-
 const projects = [
   {
     folder: "Edible Insect (Market, Collection, Consumption)",
@@ -318,13 +221,99 @@ const programsSAUPS = [
   },
 ];
 
+const gallery = [
+  {
+    subFolder: "Conference Photographs",
+    subSubFolders: [
+      {
+        subSubFolder: "Conference Photographs",
+        files: [
+          "assets/photos/Gallary/Conference Photographs/Conf.P-01.JPG",
+          "assets/photos/Gallary/Conference Photographs/Conf.P-02.JPG",
+          "assets/photos/Gallary/Conference Photographs/Conf.P-03.JPG",
+          "assets/photos/Gallary/Conference Photographs/Conf.P-04.JPG",
+          "assets/photos/Gallary/Conference Photographs/Conf.P-05.JPG",
+        ],
+      },
+    ],
+  },
+  {
+    subFolder: "Convocation Photographs",
+    subSubFolders: [
+      {
+        subSubFolder: "Convocation Photographs",
+        files: [
+          "assets/photos/Gallary/Convocation Photographs/Conv.P--02.JPG",
+          "assets/photos/Gallary/Convocation Photographs/Conv.P-01.JPG",
+          "assets/photos/Gallary/Convocation Photographs/Conv.P-03.JPG",
+          "assets/photos/Gallary/Convocation Photographs/Conv.P-04.JPG",
+          "assets/photos/Gallary/Convocation Photographs/Conv.P-05.JPG",
+          "assets/photos/Gallary/Convocation Photographs/Conv.P-06.JPG",
+          "assets/photos/Gallary/Convocation Photographs/Conv.P-07.JPG",
+          "assets/photos/Gallary/Convocation Photographs/Conv.P-08.JPG",
+          "assets/photos/Gallary/Convocation Photographs/Conv.P-09.JPG",
+          "assets/photos/Gallary/Convocation Photographs/Conv.P-10.JPG",
+        ],
+      },
+    ],
+  },
+
+  {
+    subFolder: "My Exhibited Art Photographs",
+    subSubFolders: [
+      {
+        subSubFolder: "My Exhibited Art Photographs",
+        files: [
+          "assets/photos/Gallary/My Exhibited Art Photographs/MEAT-01.JPG",
+          "assets/photos/Gallary/My Exhibited Art Photographs/MEAT-02.JPG",
+          "assets/photos/Gallary/My Exhibited Art Photographs/MEAT-03.JPG",
+          "assets/photos/Gallary/My Exhibited Art Photographs/MEAT-04.JPG",
+          "assets/photos/Gallary/My Exhibited Art Photographs/MEAT-05.JPG",
+        ],
+      },
+    ],
+  },
+  {
+    subFolder: "Rag Day Photographs",
+    subSubFolders: [
+      {
+        subSubFolder: "Rag Day Photographs",
+        files: [
+          "assets/photos/Gallary/Rag Day Photographs/RDP-01.JPG",
+          "assets/photos/Gallary/Rag Day Photographs/RDP-02.JPG",
+          "assets/photos/Gallary/Rag Day Photographs/RDP-03.JPG",
+          "assets/photos/Gallary/Rag Day Photographs/RDP-04.JPG",
+          "assets/photos/Gallary/Rag Day Photographs/RDP-05.JPG",
+          "assets/photos/Gallary/Rag Day Photographs/RDP-06.JPG",
+          "assets/photos/Gallary/Rag Day Photographs/RDP-07.JPG",
+          "assets/photos/Gallary/Rag Day Photographs/RDP-08.JPG",
+        ],
+      },
+    ],
+  },
+  {
+    subFolder: "Entertainment Photographs",
+    subSubFolders: [
+      {
+        subSubFolder: "Entertainment Photographs",
+        files: [
+          "assets/photos/Gallary/Entertainment Photographs/EP-01.JPG",
+          "assets/photos/Gallary/Entertainment Photographs/EP-02.JPG",
+          "assets/photos/Gallary/Entertainment Photographs/EP-03.JPG",
+        ],
+      },
+    ],
+  },
+];
+
 const data = {
   name: "Saumik Dev",
-  profession: "Your profession",
+  profession:
+    "An Entomology major, passionate Researcher, avid Art Photographer, Musician and Art Enthusiast",
   multi_professions: "Photographer",
   about:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  bio: "something about you in a view words Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  bio: "A MULTIFACETED ENTITY STRIVING FOR EXCELLENCE THROUGH CREATIVITY TO DEFINE THYSELF!",
   birthday: "4th Nov, 1992",
   address:
     "17, Blue Eye Tower (F-2), Borobazar, Ambarkhana, Sylhet, Bangladesh",
@@ -643,6 +632,7 @@ const data = {
   photography: photography,
   projects: projects,
   programsSAUPS: programsSAUPS,
+  gallery: gallery,
   facebook: "",
   linkedIn: "",
   twitter: "",
