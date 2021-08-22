@@ -27,28 +27,41 @@ const CustomNavBar = (props) => {
               <Link to="/research-experience">Research Experience</Link>
             </li>
 
-            {/* <li class={props.item == "/resume" ? "active" : ""}>
+            <li class={props.item == "/resume" ? "active" : ""}>
               <Link to="/resume">Resume</Link>
-            </li> */}
+            </li>
 
             <li class={props.item == "/project" ? "active" : ""}>
               <Link to="/project">Projects</Link>
             </li>
+
+            <li class={props.item == "/experiences" ? "active" : ""}>
+              <Link to="/experiences">Experiences</Link>
+            </li>
+
+            <li class={props.item == "/art-photography" ? "active" : ""}>
+              <Link to="/art-photography">Photography</Link>
+            </li>
+
+            <li class={props.item == "/award-achievements" ? "active" : ""}>
+              <Link to="/award-achievements">Achievements</Link>
+            </li>
+
             <li class={props.item == "/activity" ? "active" : ""}>
-              <Link to="/activity">Activities</Link>
+              <Link to="/activity">Extra Curricular</Link>
             </li>
 
             <li class={props.item == "/photography" ? "active" : ""}>
-              <Link to="/photography">Photography</Link>
+              <Link to="/photography">Gallery</Link>
             </li>
 
             {/* <li class={props.item == "/contact" ? "active" : ""}>
               <Link to="/contact">Contact</Link>
             </li> */}
 
-            <li class={props.item == "/about" ? "active" : ""}>
+            {/* <li class={props.item == "/about" ? "active" : ""}>
               <Link to="/about">About</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
 

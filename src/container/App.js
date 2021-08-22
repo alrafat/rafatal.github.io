@@ -11,6 +11,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Academic from "../components/Academic.";
 import ResearchExperience from "../components/ResearchExperience";
+import Experience from "../components/Experience";
 
 function App() {
   Aos.init();
@@ -20,6 +21,9 @@ function App() {
       <Route path="/" exact render={() => <CustomNavBar item="/" />} />
       <Route path="/academic" component={Academic} />
       <Route path="/research-experience" component={ResearchExperience} />
+
+      <Route path="/experiences" component={Experience} />
+
       <Route path="/contact" component={Contact} />
       <Route path="/resume" component={Resume} />
       <Route path="/about" component={About} />

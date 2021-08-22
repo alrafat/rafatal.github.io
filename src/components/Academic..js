@@ -28,29 +28,6 @@ const Academic = () => {
     );
   });
 
-  const expItems = data.experience.map((exp) => {
-    const tasks = exp.tasks.map((task) => {
-      return <li>{task}</li>;
-    });
-
-    return (
-      <div className="resume-item">
-        <div
-          style={{
-            padding: "10px",
-          }}
-        >
-          <h4>{exp.title}</h4>
-          <h5>{exp.date}</h5>
-          <p>
-            <em>{exp.institute}</em>
-          </p>
-
-          <ul>{tasks}</ul>
-        </div>
-      </div>
-    );
-  });
 
   const scoreTables = data.standard_scores.map((table) => {
     const tableHeader = table.fields.map((header) => {

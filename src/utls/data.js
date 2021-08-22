@@ -357,7 +357,7 @@ const data = {
       cgpa: "3.750 out of 4.00 (WES: 3.82)",
     },
   ],
-  training: [
+  training_experiences: [
     {
       title: "Thesis & Technical Report Writing",
       institute:
@@ -458,15 +458,16 @@ const data = {
       ],
     },
   ],
-  experience: [
+
+  professional_experiences: [
     {
       title: "RESEARCH ASSOCIATE",
       date: "September, 2020- Present",
       institute: "Where ?",
       tasks: [
         "Project: Insect Pest Management Practices and Biosafety Status of Country Bean (Lablab purpureus L.) in Bangladesh” (BRBGP-2020-09).",
-        "Approved by-Agriculture & Food System Institute (AFSI); Funded by-USAID.",
-        "Say something more about your task or activities.",
+        "Approved by-Agriculture & Food System Institute (AFSI)",
+        "Funded by-USAID",
       ],
     },
     {
@@ -476,9 +477,11 @@ const data = {
       tasks: [
         "Project: Insect as a Food: Bangladesh Perspectives",
         "Funded by- University Grants Commission (UGC), Bangladesh.",
-        "Say something more about your task or activities.",
       ],
     },
+  ],
+
+  teaching_experiences: [
     {
       title: "GRADUATE TEACHING ASSISTANT",
       date: "July, 2017- December, 2018",
@@ -487,6 +490,9 @@ const data = {
       tasks: ["Say something more about your task or activities."],
     },
   ],
+
+  organizational_experiences: [],
+
   technical_skills: [
     {
       type: "Application Software",
