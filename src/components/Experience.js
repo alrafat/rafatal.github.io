@@ -94,7 +94,7 @@ const Experience = () => {
       <section id="resume" class="resume section-show" data-aos="fade-up">
         <div class="container">
           <p align="center">
-            <q>STRIVING FOR EXCELLENCE</q>
+            <q> STRIVING FOR EXCELLENCE </q>
           </p>
           {gap}
 

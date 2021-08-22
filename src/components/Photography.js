@@ -24,8 +24,11 @@ const Photography = () => {
     let x = [];
     imagesDiv = null;
     data.photography.map((type) => {
-      type.files.map((file) => x.push(file));
+      type.subSubFolders.map((subFolder) =>
+        subFolder.files.map((file) => x.push(file))
+      );
     });
+    console.log(x);
     setImages(x);
   };
   useEffect(() => {
@@ -33,21 +36,26 @@ const Photography = () => {
   }, [1]);
 
   const photographyTypes = data.photography.map((type) => {
-    type.files.map((file) => imageArray.push(file));
+    const dev = type.subSubFolders.map((subFolder) => {
+      subFolder.files.map((file) => imageArray.push(file));
 
-    return (
-      <li
-        className={selectedImageTitle === type.folder ? "filter-active" : ""}
-        onClick={() => {
-          imagesDiv = null;
-          setImages(type.files);
-          setSelectedImageTitle(type.folder);
-          setLoad(true);
-        }}
-      >
-        {type.folder}
-      </li>
-    );
+      return (
+        <li
+          className={
+            selectedImageTitle === subFolder.subSubFolder ? "filter-active" : ""
+          }
+          onClick={() => {
+            imagesDiv = null;
+            setImages(subFolder.files);
+            setSelectedImageTitle(subFolder.subSubFolder);
+            setLoad(true);
+          }}
+        >
+          {subFolder.subSubFolder}
+        </li>
+      );
+    });
+    return dev;
   });
 
   if (images.length > 0 && load) {
@@ -60,7 +68,6 @@ const Photography = () => {
               alt={image}
               src={image}
               effect="blur"
-              data-aos="fade-right"
             />
             <div class="portfolio-info">
               <h4>{selectedImageTitle}</h4>
@@ -86,18 +93,25 @@ const Photography = () => {
     });
   }
 
+  const gap = <div style={{ height: "50px", display: "block" }}></div>;
+
   return (
     <>
-      <CustomNavBar item="/photography" />
+      <CustomNavBar item="/art-photography" />
       <section
         id="photography"
         class="portfolio section-show"
         data-aos="fade-up"
       >
         <div class="container">
-          <div class="section-title" data-aos="fade-left">
-            <h2>Photography</h2>
-            <p>My Photographs</p>
+          <p align="center">
+            <q> YOU DON'T TAKE A PHOTOGRAPH, YOU MAKE IT </q>
+          </p>
+
+          {gap}
+
+          <div class="section-title">
+            <h2>Gallery</h2>
           </div>
 
           <div class="row">
@@ -118,9 +132,7 @@ const Photography = () => {
             </div>
           </div>
 
-          <div class="row portfolio-container" data-aos="fade-right">
-            {imagesDiv}
-          </div>
+          <div class="row portfolio-container">{imagesDiv}</div>
           {isOpen && (
             <Lightbox
               mainSrc={selectedImage}

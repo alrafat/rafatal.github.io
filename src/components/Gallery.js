@@ -94,6 +94,8 @@ const Gallery = () => {
     });
   }
 
+  
+
   return (
     <>
       <CustomNavBar item="/gallery" />

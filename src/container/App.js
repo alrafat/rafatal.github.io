@@ -13,6 +13,7 @@ import Academic from "../components/Academic.";
 import ResearchExperience from "../components/ResearchExperience";
 import Experience from "../components/Experience";
 import Gallery from "../components/Gallery";
+import Photography from "../components/Photography";
 
 function App() {
   Aos.init();
@@ -30,7 +31,7 @@ function App() {
       <Route path="/contact" component={Contact} />
       <Route path="/resume" component={Resume} />
       <Route path="/about" component={About} />
-      <Route path="/photography" component={Portfolio} />
+      <Route path="/art-photography" component={Photography} />
       <Route path="/project" component={Project} />
       <Route path="/activity" component={Activity} />
     </Switch>
