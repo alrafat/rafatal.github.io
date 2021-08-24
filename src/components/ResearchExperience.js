@@ -99,9 +99,7 @@ const ResearchExperience = () => {
           <p align="center">
             <q> UNRAVELING THE MYSTERY </q>
           </p>
-
           {gap}
-
           <div className="row">
             <div class="interests container">
               <div class="section-title">

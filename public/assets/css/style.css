@@ -354,7 +354,7 @@ section .container {
   line-height: 1px;
   margin: 0 0 20px 0;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #aaaaaa;
   font-family: "Poppins", sans-serif;
 }
@@ -619,7 +619,7 @@ section .container {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: "Poppins", sans-serif;
   color: #18d26e;
   margin-bottom: 10px;
@@ -629,7 +629,7 @@ section .container {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: "Poppins", sans-serif;
   color: #18d26e;
   margin-bottom: 10px;

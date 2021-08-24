@@ -1,13 +1,14 @@
-import data from "../utls/data";
-import CustomNavBar from "./CustomNavBar";
+import { useState, useEffect } from "react";
 import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
-import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useParams } from "react-router-dom";
+import data from "../../utls/data";
+import CustomNavBar from "../CustomNavBar";
 
-// import $ from 'jquery';
+const ProjectImages = (props) => {
+  let { projectName } = useParams();
+  console.log("sasasdasda", projectName);
 
-const Project = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const [selectedImageTitle, setSelectedImageTitle] = useState("All");
@@ -20,41 +21,65 @@ const Project = () => {
 
   const [load, setLoad] = useState(true);
 
+  let imagesDiv;
+
   const loadImages = () => {
     let x = [];
-    data.projects.map((type) => {
-      type.files.map((file) => x.push(file));
+    imagesDiv = null;
+    data.projectPhotos.map((type) => {
+      if (type.subFolder === projectName) {
+        type.subSubFolders.map((subFolder) =>
+          subFolder.files.map((file) => x.push(file))
+        );
+      }
     });
+    console.log(x.length);
     setImages(x);
   };
   useEffect(() => {
     loadImages();
   }, [1]);
 
-  const photographyTypes = data.projects.map((type) => {
-    type.files.map((file) => imageArray.push(file));
+  const photographyTypes = data.projectPhotos.map((type) => {
+    console.log(type.subFolder);
+    console.log(projectName);
+    if (type.subFolder === projectName) {
+      const dev = type.subSubFolders.map((subFolder) => {
+        subFolder.files.map((file) => imageArray.push(file));
 
-    return (
-      <li
-        className={selectedImageTitle === type.folder ? "filter-active" : ""}
-        onClick={() => {
-          setImages(type.files);
-          setSelectedImageTitle(type.folder);
-          setLoad(true);
-        }}
-      >
-        {type.folder}
-      </li>
-    );
+        return (
+          <li
+            className={
+              selectedImageTitle === subFolder.subSubFolder
+                ? "filter-active"
+                : ""
+            }
+            onClick={() => {
+              imagesDiv = null;
+              setImages(subFolder.files);
+              setSelectedImageTitle(subFolder.subSubFolder);
+              setLoad(true);
+            }}
+          >
+            {subFolder.subSubFolder}
+          </li>
+        );
+      });
+      return dev;
+    }
   });
 
-  let imagesDiv;
   if (images.length > 0 && load) {
     imagesDiv = images.map((image) => {
       return (
-        <div class="col-lg-4 col-md-6 portfolio-item" data-aos="fade-left">
+        <div class="col-lg-4 col-md-6 portfolio-item">
           <div class="portfolio-wrap">
-            <LazyLoadImage className="img-fluid" alt={image} src={image} />
+            <LazyLoadImage
+              className="img-fluid"
+              alt={image}
+              src={image}
+              effect="blur"
+            />
             <div class="portfolio-info">
               <h4>{selectedImageTitle}</h4>
               <div class="portfolio-links">
@@ -79,15 +104,25 @@ const Project = () => {
     });
   }
 
+  const gap = <div style={{ height: "50px", display: "block" }}></div>;
+
   return (
     <>
-      <CustomNavBar item="/project" />
-      <section id="project" class="portfolio section-show" data-aos="fade-up">
+      <CustomNavBar item="/projects" />
+      <section
+        id="photography"
+        class="portfolio section-show"
+        data-aos="fade-up"
+      >
         <div class="container">
-          <div class="section-title" data-aos="fade-right">
-            <h2>Projects</h2>
-            <p>My Project Photographs</p>
+          <div class="section-title">
+            <h2>Project Work Photography</h2>
           </div>
+
+          {gap}
+
+          <h1 align="center">{projectName}</h1>
+          {gap}
 
           <div class="row">
             <div class="col-lg-12 d-flex justify-content-center">
@@ -120,4 +155,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectImages;

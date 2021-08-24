@@ -29,8 +29,8 @@ const CustomNavBar = (props) => {
               <Link to="/resume">Resume</Link>
             </li> */}
 
-            <li class={props.item == "/project" ? "active" : ""}>
-              <Link to="/project">Projects</Link>
+            <li class={props.item == "/projects" ? "active" : ""}>
+              <Link to="/projects">Projects</Link>
             </li>
 
             <li class={props.item == "/experiences" ? "active" : ""}>

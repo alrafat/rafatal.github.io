@@ -4,7 +4,7 @@ import Activity from "../components/Activity";
 import Contact from "../components/Contact";
 import CustomNavBar from "../components/CustomNavBar";
 import Portfolio from "../components/Photography";
-import Project from "../components/Project";
+import Project from "../components/Projects/Project";
 import Resume from "../components/Resume";
 import "./App.css";
 import Aos from "aos";
@@ -14,6 +14,7 @@ import ResearchExperience from "../components/ResearchExperience";
 import Experience from "../components/Experience";
 import Gallery from "../components/Gallery";
 import Photography from "../components/Photography";
+import ProjectImages from "../components/Projects/projectImages";
 
 function App() {
   Aos.init();
@@ -32,7 +33,8 @@ function App() {
       <Route path="/resume" component={Resume} />
       <Route path="/about" component={About} />
       <Route path="/art-photography" component={Photography} />
-      <Route path="/project" component={Project} />
+      <Route path="/projects" exact component={Project} />
+      <Route path="/projects/:projectName" component={ProjectImages} />
       <Route path="/activity" component={Activity} />
     </Switch>
     // </Fade>
