@@ -15,6 +15,7 @@ const Photography = () => {
   const [images, setImages] = useState([]);
 
   const imageArray = [];
+  const [photoIndex, setPhotoIndex] = useState(0);
 
   const [load, setLoad] = useState(true);
 
@@ -78,6 +79,13 @@ const Photography = () => {
                   }}
                   onClick={() => {
                     setIsOpen(true);
+
+                    for (let p = 0; p < images.length; p++) {
+                      if (images[p] === image) {
+                        setPhotoIndex(p);
+                      }
+                    }
+
                     setSelectedImage(image);
                   }}
                   data-gall="portfolioGallery"
@@ -135,8 +143,16 @@ const Photography = () => {
           <div class="row portfolio-container">{imagesDiv}</div>
           {isOpen && (
             <Lightbox
-              mainSrc={selectedImage}
+              mainSrc={images[photoIndex]}
+              nextSrc={images[(photoIndex + 1) % images.length]}
+              prevSrc={images[(photoIndex + images.length - 1) % images.length]}
               onCloseRequest={() => setIsOpen(false)}
+              onMovePrevRequest={() =>
+                setPhotoIndex(photoIndex + images.length - 1) % images.length
+              }
+              onMoveNextRequest={() =>
+                setPhotoIndex((photoIndex + 1) % images.length)
+              }
             />
           )}
         </div>

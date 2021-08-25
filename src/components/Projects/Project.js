@@ -1,9 +1,6 @@
 import data from "../../utls/data";
 import CustomNavBar from "../CustomNavBar";
-import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-import { Card } from "react-bootstrap";
-import { Button } from "bootstrap";
 import { Link } from "react-router-dom";
 
 const Project = () => {
