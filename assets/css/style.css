@@ -43,6 +43,12 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.quote {
+  font-style: italic;
+  font-family: "Times New Roman", "Ancient Runes", serif;
+  font-size: 20px;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
