@@ -7,7 +7,7 @@ const CustomNavBar = (props) => {
       id="header"
       class={props.item === "/" ? "header-tops" : "header-tops header-top"}
     >
-      <div class="container">
+      <div class="container" style={{ overflow: "hidden" }}>
         <h1 data-aos="fade-right">
           <Link to="/">{data.name}</Link>
         </h1>
