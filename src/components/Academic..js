@@ -28,7 +28,6 @@ const Academic = () => {
     );
   });
 
-
   const scoreTables = data.standard_scores.map((table) => {
     const tableHeader = table.fields.map((header) => {
       return (
@@ -99,10 +98,11 @@ const Academic = () => {
       <section id="resume" class="resume section-show" data-aos="fade-up">
         <div class="container">
           <p align="center">
-            <q>
-              {" "}
-              LEARNING IS A TREASURE THAT WILL FOLLOW ITS OWNER EVERYWHERE{" "}
-            </q>
+            <div className="quote">
+              <q>
+                LEARNING IS A TREASURE THAT WILL FOLLOW ITS OWNER EVERYWHERE
+              </q>
+            </div>
           </p>
 
           {gap}

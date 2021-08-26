@@ -475,7 +475,7 @@ const data = {
 
       about:
         "Thesis Title: Status of edible insects in some ethnic groups of Bangladesh",
-      cgpa: "3.491 out of 4.00 (WES: 3.55)",
+      cgpa: "3.750 out of 4.00 (WES: 3.82)",
     },
     {
       degree: "Bachelor of Science (B.Sc.) in Agriculture (Honours)",
@@ -483,7 +483,7 @@ const data = {
       varsity:
         "Faculty of Agriculture, Sylhet Agricultural University, Bangladesh",
       about: "",
-      cgpa: "3.750 out of 4.00 (WES: 3.82)",
+      cgpa: "3.491 out of 4.00 (WES: 3.55)",
     },
   ],
   training_experiences: [

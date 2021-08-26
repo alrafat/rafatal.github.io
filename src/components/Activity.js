@@ -50,7 +50,25 @@ const Activity = () => {
     const images = program.files.map((image) => {
       return (
         <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
+          <div
+            class="portfolio-wrap"
+            style={{
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              setIsOpen(true);
+
+              setImages(program.files);
+
+              for (let p = 0; p < images.length; p++) {
+                if (images[p] === image) {
+                  console.log(p);
+                  setPhotoIndex(p);
+                  break;
+                }
+              }
+            }}
+          >
             <LazyLoadImage
               className="img-fluid"
               alt={program.subSubFolder}
@@ -60,26 +78,7 @@ const Activity = () => {
             <div class="portfolio-info">
               <h4>{program.subSubFolder}</h4>
               <div class="portfolio-links">
-                <a
-                  style={{
-                    cursor: "pointer",
-                  }}
-                  onClick={() => {
-                    setIsOpen(true);
-
-                    setImages(program.files);
-
-                    for (let p = 0; p < images.length; p++) {
-                      if (images[p] === image) {
-                        console.log(p);
-                        setPhotoIndex(p);
-                        break;
-                      }
-                    }
-                  }}
-                  data-gall="portfolioGallery"
-                  class="venobox"
-                >
+                <a data-gall="portfolioGallery" class="venobox">
                   <i class="bx bx-detail"></i>
                 </a>
               </div>
@@ -98,8 +97,14 @@ const Activity = () => {
 
     return (
       <div
-        class="col-lg-4 col-md-6 d-flex align-items-center imageCard"
+        class="col-lg-4 col-md-6  imageCard"
+        onClick={() => {
+          setIsOpen(true);
+          setImages(program.files);
+          console.log(images);
+        }}
         style={{
+          cursor: "pointer",
           backgroundImage: bal,
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%",
@@ -113,18 +118,7 @@ const Activity = () => {
             <i className="bx bx-file"></i>
           </div>
           <h4>
-            <a
-              style={{
-                cursor: "pointer",
-              }}
-              onClick={() => {
-                setIsOpen(true);
-                setImages(program.files);
-                console.log(images);
-              }}
-            >
-              {program.subSubFolder}
-            </a>
+            <a>{program.subSubFolder}</a>
           </h4>
           {/* <p>{item.description}</p> */}
         </div>
@@ -141,7 +135,10 @@ const Activity = () => {
       <section id="activity" className="resume section-show">
         <div className="container">
           <p align="center">
-            <q> LONG HAUL, DILIGENCE AND SELF-ESTEEM </q>
+            <q className="quote">
+              {" "}
+              YOU CAN’T DO A GOOD JOB IF YOUR JOB IS ALL YOU DO{" "}
+            </q>
           </p>
           {gap}
           <div class="section-title" data-aos="fade-right">

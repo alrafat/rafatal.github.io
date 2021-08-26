@@ -62,7 +62,23 @@ const Photography = () => {
     imagesDiv = images.map((image) => {
       return (
         <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap">
+          <div
+            class="portfolio-wrap"
+            style={{
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              setIsOpen(true);
+
+              for (let p = 0; p < images.length; p++) {
+                if (images[p] === image) {
+                  setPhotoIndex(p);
+                }
+              }
+
+              setSelectedImage(image);
+            }}
+          >
             <LazyLoadImage
               className="img-fluid"
               alt={image}
@@ -72,24 +88,7 @@ const Photography = () => {
             <div class="portfolio-info">
               <h4>{selectedImageTitle}</h4>
               <div class="portfolio-links">
-                <a
-                  style={{
-                    cursor: "pointer",
-                  }}
-                  onClick={() => {
-                    setIsOpen(true);
-
-                    for (let p = 0; p < images.length; p++) {
-                      if (images[p] === image) {
-                        setPhotoIndex(p);
-                      }
-                    }
-
-                    setSelectedImage(image);
-                  }}
-                  data-gall="portfolioGallery"
-                  class="venobox"
-                >
+                <a data-gall="portfolioGallery" class="venobox">
                   <i class="bx bx-detail"></i>
                 </a>
               </div>
@@ -112,7 +111,7 @@ const Photography = () => {
       >
         <div class="container">
           <p align="center">
-            <q> YOU DON'T TAKE A PHOTOGRAPH, YOU MAKE IT </q>
+            <q className="quote"> YOU DON'T TAKE A PHOTOGRAPH, YOU MAKE IT </q>
           </p>
 
           {gap}

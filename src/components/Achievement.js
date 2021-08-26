@@ -10,7 +10,7 @@ const Achievements = () => {
     return (
       <div
         className="container"
-        style={{ backgroundColor: "#143D63", margin: "5px" }}
+        style={{ backgroundColor: "rgba(99,211,111,0.5)", margin: "5px" }}
       >
         <div className="row">
           <div class="col-lg-6 d-flex justify-content-center">
@@ -58,7 +58,7 @@ const Achievements = () => {
       <section id="project" class="portfolio section-show" data-aos="fade-up">
         <div class="container">
           <p align="center">
-            <q> LONG HAUL, DILIGENCE AND SELF-ESTEEM </q>
+            <q className="quote"> LONG HAUL, DILIGENCE AND SELF-ESTEEM </q>
           </p>
           {gap}
 

@@ -97,7 +97,7 @@ const ResearchExperience = () => {
       <section class="resume section-show" data-aos="fade-up">
         <div class="container">
           <p align="center">
-            <q> UNRAVELING THE MYSTERY </q>
+            <q className="quote"> UNRAVELING THE MYSTERY </q>
           </p>
           {gap}
           <div className="row">

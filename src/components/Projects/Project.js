@@ -49,7 +49,7 @@ const Project = () => {
       <section id="project" class="portfolio section-show" data-aos="fade-up">
         <div class="container">
           <p align="center">
-            <q> EXERTING INNOVATION </q>
+            <q className="quote"> EXERTING INNOVATION </q>
           </p>
           {gap}
 
