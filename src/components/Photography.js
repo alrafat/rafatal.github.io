@@ -23,13 +23,12 @@ const Photography = () => {
 
   const loadImages = () => {
     let x = [];
-    imagesDiv = null;
+    imagesDiv = [];
     data.photography.map((type) => {
       type.subSubFolders.map((subFolder) =>
         subFolder.files.map((file) => x.push(file))
       );
     });
-    console.log(x);
     setImages(x);
   };
   useEffect(() => {
@@ -119,7 +118,7 @@ const Photography = () => {
           {gap}
 
           <div class="section-title">
-            <h2>Gallery</h2>
+            <h2>Photography</h2>
           </div>
 
           <div class="row">

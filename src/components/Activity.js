@@ -5,10 +5,11 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import { useState } from "react";
 import CustomNavBar from "./CustomNavBar";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Activity = () => {
   AOS.init();
-  const [images, setImage] = useState(null);
+  const [images, setImages] = useState(null);
 
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -16,14 +17,7 @@ const Activity = () => {
   const leadItems = data.leadership.map((lead) => {
     return (
       <div className="resume-item">
-        <div
-          style={
-            {
-              // backgroundColor: "#F2F2F2",
-              // padding: "10px",
-            }
-          }
-        >
+        <div>
           <h4>{lead.position}</h4>
           <h5>{lead.date}</h5>
           <p>
@@ -39,7 +33,6 @@ const Activity = () => {
       <div className="resume-item">
         <div
           style={{
-            // backgroundColor: "#F2F2F2",
             padding: "10px",
           }}
         >
@@ -53,49 +46,54 @@ const Activity = () => {
     );
   });
 
-  const activityPhotos = data.activityPhotos.map((item) => {
-    let img = item.files[0];
-    const bal = 'url("' + img + '")';
+  const culturalPrograms = data.culturalPrograms.map((program) => {
+    const images = program.files.map((image) => {
+      return (
+        <div class="col-lg-4 col-md-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <LazyLoadImage
+              className="img-fluid"
+              alt={program.subSubFolder}
+              src={image}
+              effect="blur"
+            />
+            <div class="portfolio-info">
+              <h4>{program.subSubFolder}</h4>
+              <div class="portfolio-links">
+                <a
+                  style={{
+                    cursor: "pointer",
+                  }}
+                  onClick={() => {
+                    setIsOpen(true);
 
-    return (
-      <div
-        class="col-lg-4 col-md-6 d-flex align-items-stretch imageCard"
-        style={{
-          backgroundImage: bal,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100% 100%",
-          backgroundPosition: "center",
-          backgroundColor: "rgba(0,0,0,0.5)",
-          backgroundBlendMode: "darken",
-        }}
-      >
-        <div className="icon-box">
-          <div className="icon">
-            <i className="bx bx-file"></i>
+                    setImages(program.files);
+
+                    for (let p = 0; p < images.length; p++) {
+                      if (images[p] === image) {
+                        console.log(p);
+                        setPhotoIndex(p);
+                        break;
+                      }
+                    }
+                  }}
+                  data-gall="portfolioGallery"
+                  class="venobox"
+                >
+                  <i class="bx bx-detail"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <h4>
-            <a
-              // href="#"
-              style={{
-                cursor: "pointer",
-              }}
-              onClick={() => {
-                setIsOpen(true);
-                setImage(item.files);
-                console.log(images);
-              }}
-            >
-              {item.folder}{" "}
-            </a>
-          </h4>
-          <p>{item.description}</p>
         </div>
-      </div>
-    );
+      );
+    });
+    return images;
   });
 
-  const programs = data.programsSAUPS.map((item) => {
-    let img = item.files[0];
+  const programs = data.programsSAUPS.map((program) => {
+    let randomNumber = Math.round(Math.random() % program.files.length);
+    let img = program.files[Math.round(randomNumber * 10)];
     const bal = 'url("' + img + '")';
 
     return (
@@ -116,24 +114,25 @@ const Activity = () => {
           </div>
           <h4>
             <a
-              // href="#"
               style={{
                 cursor: "pointer",
               }}
               onClick={() => {
                 setIsOpen(true);
-                setImage(item.files);
+                setImages(program.files);
                 console.log(images);
               }}
             >
-              {item.folder}
+              {program.subSubFolder}
             </a>
           </h4>
-          <p>{item.description}</p>
+          {/* <p>{item.description}</p> */}
         </div>
       </div>
     );
   });
+
+  const gap = <div style={{ height: "50px", display: "block" }}></div>;
 
   return (
     <>
@@ -141,9 +140,12 @@ const Activity = () => {
 
       <section id="activity" className="resume section-show">
         <div className="container">
-          <div class="section-title">
-            <h2>Activities</h2>
-            <p>My extra curricular activities</p>
+          <p align="center">
+            <q> LONG HAUL, DILIGENCE AND SELF-ESTEEM </q>
+          </p>
+          {gap}
+          <div class="section-title" data-aos="fade-right">
+            <h2>Extra Curricular</h2>
           </div>
           <div className="row" data-aos="fade-up">
             <div className="col-lg-6" data-aos="fade-right">
@@ -156,16 +158,25 @@ const Activity = () => {
             </div>
           </div>
           <div style={{ height: "20px" }}></div>
+
+          {gap}
+
           <div className="services" data-aos="fade-up">
-            <h3 className="resume-title">SAUPS Program Photographs</h3>
+            <div class="section-title" data-aos="fade-right">
+              <h2>SAUPS Program Photographs</h2>
+            </div>
             <div className="row">{programs}</div>
           </div>
 
-          <div className="services" data-aos="fade-up">
-            <h3 className="resume-title">
-              Other Photographs Of My Activities{" "}
-            </h3>
-            <div className="row">{activityPhotos}</div>
+          {gap}
+
+          <div class="portfolio section-show">
+            <div className="services">
+              <div class="section-title">
+                <h2>Cultural Programs</h2>
+              </div>
+              <div className="row portfolio-container">{culturalPrograms}</div>
+            </div>
           </div>
 
           {isOpen && (

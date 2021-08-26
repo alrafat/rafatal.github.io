@@ -178,6 +178,18 @@
             ],
           },
           {
+            subSubFolder: "SAUPS Set Out-1",
+            files: [
+              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-01.JPG",
+              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-02.JPG",
+              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-03.JPG",
+              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-04.JPG",
+              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-05.JPG",
+              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-06.JPG",
+              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-07.JPG",
+            ],
+          },
+          {
             subSubFolder: "SAUPS- ART OF LIGHT-2nd National-2019",
             files: [
               "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS- ART OF LIGHT-2nd National-2019/SAUPS-2nd National-01.JPG",
@@ -195,18 +207,6 @@
               "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS- ART OF LIGHT-2nd National-2019/SAUPS-2nd National-13.JPG",
               "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS- ART OF LIGHT-2nd National-2019/SAUPS-2nd National-14.jpg",
               "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS- ART OF LIGHT-2nd National-2019/SAUPS-2nd National-15.JPG",
-            ],
-          },
-          {
-            subSubFolder: "Set Out-1",
-            files: [
-              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-01.JPG",
-              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-02.JPG",
-              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-03.JPG",
-              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-04.JPG",
-              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-05.JPG",
-              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-06.JPG",
-              "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-07.JPG",
             ],
           },
           {

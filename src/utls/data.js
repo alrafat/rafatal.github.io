@@ -216,15 +216,15 @@ const programsSAUPS = [
     ],
   },
   {
-    subSubFolder: "Set Out-1",
+    subSubFolder: "SAUPS Set Out-1",
     files: [
-      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-01.JPG",
-      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-02.JPG",
-      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-03.JPG",
-      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-04.JPG",
-      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-05.JPG",
-      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-06.JPG",
-      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/Set Out-1/Set Out-1-07.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-01.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-02.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-03.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-04.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-05.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-06.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/SAUPS Program Photographs/SAUPS Set Out-1/Set Out-1-07.JPG",
     ],
   },
   {
@@ -422,6 +422,26 @@ const photography = [
           "assets/photos/Art Photography/Art Photographs/AP-47.JPG",
         ],
       },
+    ],
+  },
+];
+
+const culturalPrograms = [
+  {
+    subSubFolder: "Cultural Program Photographs",
+    files: [
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-01.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-02.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-03.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-04.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-05.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-06.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-07.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-08.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-09.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-10.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-11.JPG",
+      "assets/photos/EXTRA-CURRICULAR ACTIVITIES/Cultural Program Photographs/OPP-12.JPG",
     ],
   },
 ];
@@ -748,6 +768,7 @@ const data = {
     "Insect Ecology and Evolution",
     "Phylogenetics",
   ],
+  culturalPrograms: culturalPrograms,
   activityPhotos: activityPhotos,
   programsSAUPS: programsSAUPS,
   gallery: gallery,
@@ -767,6 +788,35 @@ const data = {
         "assets/photos/Project Work Photographs/Insect as a Food: Bangladesh Perspectives/Survey-Tongchangya Photographs/S-Tong.P-01.JPG",
       description:
         "This project is undertaken to create a platform for future assessment of the necessity for the development of ecosystem viable Genetically Engineered country bean plant through using the base line information. The specific objectives include determining the current insect pest status and management practices in country bean production system. Another important objective is to assess the biosafety situation in the country bean ecosystem. So far, we have collected basic information regarding the aforementioned details from 300 respondents across the selected areas throughout the country.",
+    },
+  ],
+  achievements: [
+    {
+      title: "National Science & Technology (NST) Fellowship for MS Thesis",
+      issuedBy: "Ministry of Science and Technology, Bangladesh",
+      position: "",
+      date: "2017-2018",
+      detail: "",
+      image:
+        "https://www.daily-sun.com/assets/news_images/2019/04/11/Daily-sun-11-04-2019-11.jpg",
+    },
+    {
+      title: "National Photography Award",
+      issuedBy: "Unknown",
+      position: "",
+      date: "2018",
+      detail: "",
+      image:
+        "https://www.worldphoto.org/sites/default/files/gallery/images/2013057/cbda9962b43e64930eaa7fa4f0867265.IMG_3777.jpg",
+    },
+    {
+      title: "International Photography Award",
+      issuedBy: "Unknown",
+      position: "",
+      date: "2017",
+      detail: "",
+      image:
+        "https://www.daily-sun.com/assets/news_images/2019/04/11/Daily-sun-11-04-2019-11.jpg",
     },
   ],
   facebook: "",

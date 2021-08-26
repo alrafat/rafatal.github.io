@@ -15,6 +15,7 @@ import Experience from "../components/Experience";
 import Gallery from "../components/Gallery";
 import Photography from "../components/Photography";
 import ProjectImages from "../components/Projects/projectImages";
+import Achievements from "../components/Achievement";
 
 function App() {
   Aos.init();
@@ -28,6 +29,8 @@ function App() {
       <Route path="/experiences" component={Experience} />
 
       <Route path="/gallery" component={Gallery} />
+
+      <Route path="/award-achievements" component={Achievements} />
 
       <Route path="/contact" component={Contact} />
       <Route path="/resume" component={Resume} />
