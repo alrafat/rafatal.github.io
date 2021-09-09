@@ -108,7 +108,7 @@ const getFolders = async () => {
     console.log(data);
   }
 
-  fs.writeFile("demo.js", JSON.stringify(data), function (err) {
+  fs.writeFile("imageLinks.js", JSON.stringify(data), function (err) {
     if (err) throw err;
     console.log("File is created successfully.");
   });
