@@ -111,7 +111,7 @@ const Gallery = () => {
       >
         <div class="container">
           <div class="section-title" data-aos="fade-left">
-            <h2>Gallery</h2>
+            <h2>GALLERY</h2>
           </div>
 
           <div class="row">

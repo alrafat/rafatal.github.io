@@ -136,7 +136,7 @@ const Academic = () => {
           <div className="row">
             <div className="col-lg-12">
               <div class="section-title">
-                <h2>Technical Skill</h2>
+                <h2>TECHNICAL SKILLS</h2>
               </div>
 
               <div

@@ -99,7 +99,7 @@ const Experience = () => {
           {gap}
 
           <div class="section-title">
-            <h2>Professional Experience</h2>
+            <h2>PROFESSIONAL AND RESEARCH EXPERIENCES</h2>
           </div>
 
           <div className="row">{professionalExperiences}</div>
@@ -107,7 +107,7 @@ const Experience = () => {
           {gap}
 
           <div class="section-title">
-            <h2>Teaching Experience</h2>
+            <h2>TEACHING EXPERIENCE</h2>
           </div>
 
           <div className="row">{teachingExperiences}</div>
@@ -119,7 +119,7 @@ const Experience = () => {
           <div className="row">
             <div className="col-lg-12">
               <div class="section-title">
-                <h2>Training Experience</h2>
+                <h2>TRAINING EXPERIENCES</h2>
               </div>
 
               <div className="row" style={{ padding: "10px" }}>
@@ -133,7 +133,7 @@ const Experience = () => {
           <div className="row">
             <div className="col-lg-12">
               <div class="section-title">
-                <h2>Organizational Experiences</h2>
+                <h2>ORGANIZATIONAL EXPERIENCES</h2>
               </div>
 
               <div className="row" style={{ padding: "10px" }}>

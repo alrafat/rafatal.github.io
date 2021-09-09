@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <div class="about-me container">
       <div class="section-title">
-        <h2>About</h2>
+        <h2>ABOUT</h2>
         <p>Learn more about me</p>
       </div>
 

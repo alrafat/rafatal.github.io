@@ -63,7 +63,7 @@ const Achievements = () => {
           {gap}
 
           <div class="section-title" data-aos="fade-right">
-            <h2>Awards & Achievements</h2>
+            <h2>AWARDS & ACHIEVEMENTS</h2>
           </div>
 
           <div class="row">{achievements}</div>

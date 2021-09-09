@@ -34,24 +34,20 @@ const CustomNavBar = (props) => {
             </li>
 
             <li class={props.item == "/art-photography" ? "active" : ""}>
-              <Link to="/art-photography">Photography</Link>
+              <Link to="/art-photography">Art Photography</Link>
             </li>
 
             <li class={props.item == "/award-achievements" ? "active" : ""}>
-              <Link to="/award-achievements">Achievements</Link>
+              <Link to="/award-achievements">Awards and Achievements</Link>
             </li>
 
             <li class={props.item == "/activity" ? "active" : ""}>
-              <Link to="/activity">Extra Curricular</Link>
+              <Link to="/activity">Extra-Curricular Activities</Link>
             </li>
 
             <li class={props.item == "/gallery" ? "active" : ""}>
               <Link to="/gallery">Gallery</Link>
             </li>
-
-            {/* <li class={props.item == "/contact" ? "active" : ""}>
-              <Link to="/contact">Contact</Link>
-            </li> */}
 
             <li class={props.item == "/about" ? "active" : ""}>
               <Link to="/about">About</Link>

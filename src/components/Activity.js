@@ -142,7 +142,7 @@ const Activity = () => {
           </p>
           {gap}
           <div class="section-title" data-aos="fade-right">
-            <h2>Extra Curricular</h2>
+            <h2>EXTRA-CURRICULAR ACTIVITIES</h2>
           </div>
           <div className="row" data-aos="fade-up">
             <div className="col-lg-6" data-aos="fade-right">
@@ -173,6 +173,10 @@ const Activity = () => {
                 <h2>Cultural Programs</h2>
               </div>
               <div className="row portfolio-container">{culturalPrograms}</div>
+              <p>
+                To listen to some of the musical performances, <a href="">please visit
+                here</a>
+              </p>
             </div>
           </div>
 

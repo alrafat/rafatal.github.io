@@ -31,7 +31,8 @@ const Project = () => {
             {gap}
 
             <p class="card-text" style={{ color: "black" }}>
-              {project.description}
+              {project.description} You can enjoy some interesting video from
+              Edible Insects research from here, here and here.
             </p>
           </div>
           {gap}
@@ -54,7 +55,7 @@ const Project = () => {
           {gap}
 
           <div class="section-title" data-aos="fade-right">
-            <h2>Projects</h2>
+            <h2>PROJECTS</h2>
           </div>
 
           <div class="row">{projects}</div>

@@ -469,7 +469,7 @@ const data = {
   education: [
     {
       degree: "Master of Science (M.Sc.) in Entomology",
-      date: "Feb, 2019",
+      date: "Feb,2019",
       varsity:
         "Department of Entomology, Sylhet Agricultural University, Bangladesh",
 
@@ -479,7 +479,7 @@ const data = {
     },
     {
       degree: "Bachelor of Science (B.Sc.) in Agriculture (Honours)",
-      date: "Dec, 2016",
+      date: "Dec,2016",
       varsity:
         "Faculty of Agriculture, Sylhet Agricultural University, Bangladesh",
       about: "",
@@ -490,7 +490,7 @@ const data = {
     {
       title: "Thesis & Technical Report Writing",
       institute:
-        "Institutional Quality Assurance Cell (IQAC) Sylhet Agricultural University, Sylhet, Bangladesh",
+        "Institutional Quality Assurance Cell (IQAC), Sylhet Agricultural University, Sylhet, Bangladesh",
       date: "April, 2018",
       time: "3 days",
     },
@@ -590,7 +590,7 @@ const data = {
 
   professional_experiences: [
     {
-      title: "RESEARCH ASSOCIATE",
+      title: "Research Associate",
       date: "September, 2020- Present",
       institute: "Where ?",
       tasks: [
@@ -600,7 +600,7 @@ const data = {
       ],
     },
     {
-      title: "GRADUATE RESEARCH ASSISTANT",
+      title: "Graduate Research Assistant",
       date: "July, 2017- December, 2018",
       institute: "Where ?",
       tasks: [
@@ -612,7 +612,7 @@ const data = {
 
   teaching_experiences: [
     {
-      title: "GRADUATE TEACHING ASSISTANT",
+      title: "Graduate Teaching Assistant",
       date: "July, 2017- December, 2018",
       institute:
         "Department of Entomology, Sylhet Agricultural University, Bangladesh",
@@ -625,15 +625,15 @@ const data = {
   technical_skills: [
     {
       type: "Application Software",
-      skills: "MS Word, MS excel, MS POWERPOINT",
+      skills: "MS Word, MS Excel, MS PowerPoint",
     },
     {
       type: "Statistical Software",
-      skills: "SPSS, R SOFTWARE",
+      skills: "SPSS, R Software",
     },
     {
       type: "Image Processing Software",
-      skills: "ADOBE PHOTOSHOP, ADOBE ILLUSTRATOR",
+      skills: "Adobe Photoshop, Adobe Illustrator",
     },
   ],
 
@@ -643,17 +643,16 @@ const data = {
       date: "2018- Present",
       institute: "SAUPS (Sylhet Agricultural University Photographic Society)",
     },
+    {
+      position: "Founding President",
+      date: "2016- 2018",
+      institute: "SAUPS (Sylhet Agricultural University Photographic Society)",
+    },
 
     {
       position: "Vice President",
       date: "2017-2018",
       institute: "PRADHIKAR (An Environmental & Animal Welfare Organization)",
-    },
-
-    {
-      position: "Founding President",
-      date: "2016- 2018",
-      institute: "SAUPS (Sylhet Agricultural University Photographic Society)",
     },
 
     {
@@ -668,13 +667,13 @@ const data = {
     {
       position: "Editor-in-Chief",
       description:
-        "Souvenir of 'ART OF LIGHT-SAUPS 2 nd National Photography Exhibition and Competition-2019'",
+        "Souvenir of 'ART OF LIGHT-SAUPS 2nd National Photography Exhibition and Competition-2019'",
     },
 
     {
       position: "Editor-in-Chief",
       description:
-        "Souvenir of “SAUPS 1 st National Photography Exhibition and Competition-2017”",
+        "Souvenir of “SAUPS 1st National Photography Exhibition and Competition-2017”",
     },
     {
       position: "Member of Volleyball Team",
@@ -689,7 +688,7 @@ const data = {
   ],
   journals: [
     {
-      title: "Practices of entomophagy and entomotherapy in Bangladesh.",
+      title: "Practices of entomophagy and entomotherapy in Bangladesh",
 
       proceeding: "Journal of Insects as Food and Feed 6(5): 515-524",
 
@@ -704,7 +703,7 @@ const data = {
   papers: [
     {
       title:
-        "The minerals and pesticides residues of wild field cricket (Brachytrupes sp.) in Bangladesh. ",
+        "The minerals and pesticides residues of wild field cricket (Brachytrupes sp.) in Bangladesh",
 
       proceeding:
         "International Conference on Recent Advances in Chemistry (ICRAC 2020) (pp. 219-220)",
@@ -715,7 +714,7 @@ const data = {
     },
     {
       title:
-        "The value chain of fresh edible insect market in Bandarban, Bangladesh.",
+        "The value chain of fresh edible insect market in Bandarban, Bangladesh",
 
       proceeding:
         "Proceeding of International Conference on Sustainable Agriculture and Rural Development: Road to SDGs (pp. 52). Sylhet, Bangladesh",
@@ -725,7 +724,7 @@ const data = {
         "Jointly organized by Bangladesh Agricultural Extension Society (BAES) and Sylhet Agricultural University, Bangladesh",
     },
     {
-      title: "Survey on edible insects among some ethnic groups of Bangladesh.",
+      title: "Survey on edible insects among some ethnic groups of Bangladesh",
 
       proceeding:
         "Proceedings of 3 rd CSD Annual Conference on Sustainable Development 2018 (pp. 30)",
@@ -766,7 +765,8 @@ const data = {
     "Insect Pathology",
     "Medical Entomology",
     "Insect Ecology and Evolution",
-    "Phylogenetics",
+    "Apiculture",
+    "Biological Control",
   ],
   culturalPrograms: culturalPrograms,
   activityPhotos: activityPhotos,
@@ -781,6 +781,8 @@ const data = {
         "assets/photos/Project Work Photographs/Insect as a Food: Bangladesh Perspectives/Edible Insect (Market, Collection, Consumption)/EI-MCC-01.JPG",
       description:
         "This project documented aspects of entomophagy and entomotherapy of ethnic people in Bangladesh as this practice is believed to ensure future food security. A comprehensive survey was conducted involving six insect-consuming ethnic groups: Garo, Chakma, Tanchangya, Marma, Mro, and Tripura. Total data of 150 respondents were taken by selecting single member from each family, with a total of 25 families per ethnic groups. Data were analyzed by SPSS Statistical software. A total of 36 insect species of 19 families and 7 orders were consumed by them. In terms of species, those of the Coleoptera ranked highest (14), followed by Hymenoptera (7), Orthoptera (5), Hemiptera (5) and Blattodea (3 species); one species each belonged to Ephemeroptera and Odonata. The field cricket (Brachytrupes sp.), short-horned grasshopper (Oxya sp.) and giant water bug (Lethocerus indicus) were most preferred, reaching respective acceptance levels of 84, 83, and 79% by the respondents of all ethnic groups taken together. The total number of species used as human food by the Chakma, Marma, Mro, Tanchangya, Tripura, and Garo was 32, 22, 29, 21, 26, and 14, respectively. Nine species were used to treat coughs, fevers, nocturnal emissions, burning and gastroenteritis",
+
+      youtube: ["sas", "asa", "sas"],
     },
     {
       project: "Insect Pest Management Practices and Biosafety",
@@ -788,6 +790,8 @@ const data = {
         "assets/photos/Project Work Photographs/Insect as a Food: Bangladesh Perspectives/Survey-Tongchangya Photographs/S-Tong.P-01.JPG",
       description:
         "This project is undertaken to create a platform for future assessment of the necessity for the development of ecosystem viable Genetically Engineered country bean plant through using the base line information. The specific objectives include determining the current insect pest status and management practices in country bean production system. Another important objective is to assess the biosafety situation in the country bean ecosystem. So far, we have collected basic information regarding the aforementioned details from 300 respondents across the selected areas throughout the country.",
+
+      youtube: ["sas", "asa", "sas"],
     },
   ],
   achievements: [

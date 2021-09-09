@@ -117,7 +117,7 @@ const Photography = () => {
           {gap}
 
           <div class="section-title">
-            <h2>Photography</h2>
+            <h2>ART PHOTOGRAPHY</h2>
           </div>
 
           <div class="row">

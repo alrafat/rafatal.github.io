@@ -2,54 +2,92 @@ import data from "../utls/data";
 import CustomNavBar from "./CustomNavBar";
 
 const ResearchExperience = () => {
-  const journals = data.journals.map((journal) => (
-    <li>
-      <div style={{ padding: "5px" }}>
-        <p
-          style={{ fontSize: "19px", fontFamily: "sans-serif" }}
-          className="test-items"
-        >
-          {journal.title}
-        </p>
-        <p>{journal.proceeding}</p>
-        <p>Authors : {journal.authors}</p>
-        <a href={journal.link}>
-          <em>
-            {journal.journal} {journal.impact_factor}
-          </em>
-        </a>
-      </div>
-    </li>
-  ));
-  const papers = data.papers.map((paper) => (
-    <li>
-      <div style={{ padding: "5px" }}>
-        <p
-          style={{ fontFamily: "sans-serif", fontSize: "19px" }}
-          className="test-items"
-        >
-          {paper.title}
-        </p>
+  const journals = data.journals.map((journal) => {
+    let authors = BoldedText({
+      text: journal.authors,
+      shouldBeBold: journal.authors.includes("Dev, S.")
+        ? "Dev, S."
+        : journal.authors.includes("S. Dev")
+        ? "S. Dev"
+        : journal.authors.includes("Dev, S.")
+        ? "Dev, S."
+        : journal.authors.includes("Dev. S.")
+        ? "Dev. S."
+        : "",
+    });
 
-        <ul>
-          <li>
-            {" "}
-            <p>{paper.proceeding}</p>
-          </li>
+    return (
+      <li>
+        <div style={{ padding: "5px" }}>
+          <p
+            style={{ fontSize: "19px", fontFamily: "sans-serif" }}
+            className="test-items"
+          >
+            {journal.title}
+          </p>
+          <p>{journal.proceeding}</p>
+          <p>Authors : {authors}</p>
+          <a href={journal.link}>
+            <em>
+              {journal.journal}, {journal.impact_factor}
+            </em>
+          </a>
+        </div>
+      </li>
+    );
+  });
+  function BoldedText({ text, shouldBeBold }) {
+    const textArray = text.split(shouldBeBold);
+    return (
+      <span>
+        {textArray.map((item, index) => (
+          <>
+            {item}
+            {index !== textArray.length - 1 && <b>{shouldBeBold}</b>}
+          </>
+        ))}
+      </span>
+    );
+  }
+  const papers = data.papers.map((paper) => {
+    let authors = BoldedText({
+      text: paper.authors,
+      shouldBeBold: paper.authors.includes("Dev, S.")
+        ? "Dev, S."
+        : paper.authors.includes("S. Dev")
+        ? "S. Dev"
+        : paper.authors.includes("Dev, S.")
+        ? "Dev, S."
+        : "",
+    });
 
-          <li>
-            {" "}
-            <p>Authors : {paper.authors}</p>
-          </li>
+    return (
+      <li>
+        <div style={{ padding: "5px" }}>
+          <p
+            style={{ fontFamily: "sans-serif", fontSize: "19px" }}
+            className="test-items"
+          >
+            {paper.title}
+          </p>
 
-          <li>
-            {" "}
-            <em>{paper.venue}</em>
-          </li>
-        </ul>
-      </div>
-    </li>
-  ));
+          <ul>
+            <li>
+              {" "}
+              <p>{paper.proceeding}</p>
+            </li>
+
+            <li>{authors}</li>
+
+            <li>
+              {" "}
+              <em>{paper.venue}</em>
+            </li>
+          </ul>
+        </div>
+      </li>
+    );
+  });
 
   const gap = <div style={{ height: "50px", display: "block" }}></div>;
 
@@ -103,7 +141,7 @@ const ResearchExperience = () => {
           <div className="row">
             <div class="interests container">
               <div class="section-title">
-                <h2>Research Interests</h2>
+                <h2>RESEARCH INTERESTS</h2>
               </div>
               <div class="row">{researchInterests}</div>
             </div>
