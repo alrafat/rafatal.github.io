@@ -1,3 +1,9 @@
+.fa-scholar {
+  content: url("../icons/google-scholar.svg");
+  height: 1em;
+  width: auto;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
