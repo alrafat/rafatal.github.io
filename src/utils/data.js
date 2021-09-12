@@ -474,8 +474,13 @@ const data = {
   profession:
     "An Entomology major, passionate Researcher, avid Art Photographer, Musician and Art Enthusiast",
   multi_professions: "Photographer",
-  about:
-    "Saumik Dev was born in Sreemangal, Sylhet, Bangladesh. He is currently working as a “Research Associate” in the Department of Entomology, Sylhet Agricultural University, Sylhet, Bangladesh. Prior to that, he completed both his M.Sc. in Entomology and B.Sc. in Agriculture degrees from the Sylhet Agricultural University, Sylhet, Bangladesh. While pursuing the undergraduate degree, he developed keen interest in Entomology (the study of insects) that strive him to be an Entomologist upon completing the graduate program. As a short term goal, Mr. Dev has a strong desire and determination to pursue a Ph.D. in Entomology. He aspires to make some significant contribution in society by applying his knowledge and skills that he will be gaining. Outside academic matters, Mr. Dev has a great passion for Art Photography. Whenever free, he loves to explore the colorful moments of life, making him inclined to portray the lifestyle of common people. His art photographs were showcased in some photography exhibitions, with some international and national awards as well. Mr. Dev also holds a fascination for music and musical instruments. He loves to play Tabla and Guitar. He believes in the mantra “Diversity” and thus wishes to enrich himself with these kinds of multifaceted activities.",
+  about: [
+    "Saumik Dev was born in Sreemangal, Sylhet, Bangladesh. He is currently working as a “Research Associate” in the Department of Entomology, Sylhet Agricultural University, Sylhet, Bangladesh.",
+    "Prior to that, he completed both his M.Sc. in Entomology and B.Sc. in Agriculture degrees from the Sylhet Agricultural University, Sylhet, Bangladesh. While pursuing the undergraduate degree, he developed keen interest in Entomology (the study of insects) that strive him to be an Entomologist upon completing the graduate program.",
+    "As a short term goal, Mr. Dev has a strong desire and determination to pursue a Ph.D. in Entomology. He aspires to make some significant contribution in society by applying his knowledge and skills that he will be gaining.",
+    "Outside academic matters, Mr. Dev has a great passion for Art Photography. Whenever free, he loves to explore the colorful moments of life, making him inclined to portray the lifestyle of common people. His art photographs were showcased in some photography exhibitions, with some international and national awards as well.",
+    "Mr. Dev also holds a fascination for music and musical instruments. He loves to play Tabla and Guitar. He believes in the mantra “Diversity” and thus wishes to enrich himself with these kinds of multifaceted activities.",
+  ],
   bio: "A MULTIFACETED ENTITY STRIVING FOR EXCELLENCE THROUGH CREATIVITY TO DEFINE THYSELF!",
   birthday: "4th Nov, 1992",
   address:
@@ -492,7 +497,7 @@ const data = {
   education: [
     {
       degree: "Master of Science (M.Sc.) in Entomology",
-      date: "Feb,2019",
+      date: "Feb, 2019",
       varsity:
         "Department of Entomology, Sylhet Agricultural University, Bangladesh",
 
@@ -502,7 +507,7 @@ const data = {
     },
     {
       degree: "Bachelor of Science (B.Sc.) in Agriculture (Honours)",
-      date: "Dec,2016",
+      date: "Dec, 2016",
       varsity:
         "Faculty of Agriculture, Sylhet Agricultural University, Bangladesh",
       about: "",
