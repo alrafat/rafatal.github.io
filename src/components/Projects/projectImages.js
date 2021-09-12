@@ -6,9 +6,8 @@ import { PROJECTS } from "../../utils/constants";
 import data from "../../utils/data";
 import CustomNavBar from "../CustomNavBar";
 
-const ProjectImages = (props) => {
+const ProjectImages = () => {
   let { projectName } = useParams();
-  console.log("sasasdasda", projectName);
 
   const [selectedImage, setSelectedImage] = useState(null);
 

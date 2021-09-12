@@ -36,11 +36,11 @@ function App() {
       <Route path={EXPERIENCES} component={Experience} />
       <Route path={GALLERY} component={Gallery} />
       <Route path={AWARDS_ACHIEVEMENTS} component={Achievements} />
-      <Route path={ABOUT} component={About} />
+      <Route path={EXTRA_CURRICULAR_ACTIVITIES} component={Activity} />
       <Route path={ART_PHOTOGRAPHY} component={Photography} />
       <Route path={PROJECTS} exact component={Project} />
-      <Route path={`${PROJECTS}/:projectName}`} component={ProjectImages} />
-      <Route path={EXTRA_CURRICULAR_ACTIVITIES} component={Activity} />
+      <Route path="/projects/:projectName" component={ProjectImages} />
+      <Route path={ABOUT} component={About} />
     </Switch>
   );
 }
