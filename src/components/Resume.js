@@ -1,5 +1,5 @@
 import { Row, Col } from "react-bootstrap";
-import data from "../utls/data";
+import data from "../utils/data";
 import CustomNavBar from "./CustomNavBar";
 
 const Resume = () => {

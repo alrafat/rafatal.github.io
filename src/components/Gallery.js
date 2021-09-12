@@ -1,9 +1,10 @@
-import data from "../utls/data";
+import data from "../utils/data";
 import CustomNavBar from "./CustomNavBar";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { GALLERY } from "../utils/constants";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -103,7 +104,7 @@ const Gallery = () => {
 
   return (
     <>
-      <CustomNavBar item="/gallery" />
+      <CustomNavBar item={GALLERY} />
       <section
         id="photography"
         class="portfolio section-show"

@@ -1,4 +1,4 @@
-import data from "../../utls/data";
+import data from "../../utils/data";
 
 const AboutMe = () => {
   return (
@@ -13,7 +13,7 @@ const AboutMe = () => {
           <img src="assets/img/me.png" class="img-fluid" alt="" />
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>{data.profession}</h3>
+          {/* <h3>{data.profession}</h3>
           <p class="font-italic">{data.bio}</p>
           <div class="row">
             <div class="col-lg-6">
@@ -23,7 +23,7 @@ const AboutMe = () => {
                   <strong>Birthday:</strong> {data.birthday}
                 </li>
                 <li>
-                  <i class="icofont-rounded-right"></i>{" "}
+                 <i class="icofont-rounded-right"></i>{" "}
                   <strong>Website:</strong> {data.website}
                 </li>
                 <li>
@@ -56,7 +56,7 @@ const AboutMe = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <p>{data.about}</p>
         </div>
       </div>

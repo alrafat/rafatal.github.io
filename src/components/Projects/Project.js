@@ -1,7 +1,8 @@
-import data from "../../utls/data";
+import data from "../../utils/data";
 import CustomNavBar from "../CustomNavBar";
 import "react-image-lightbox/style.css";
 import { Link } from "react-router-dom";
+import { PROJECTS } from "../../utils/constants";
 
 const Project = () => {
   const gap = <div style={{ height: "50px", display: "block" }}></div>;
@@ -32,12 +33,15 @@ const Project = () => {
 
             <p class="card-text" style={{ color: "black" }}>
               {project.description} You can enjoy some interesting video from
-              Edible Insects research from here, here and here.
+              Edible Insects research from{" "}
+              <a href="https://www.youtube.com/playlist?list=PL-Ab1DY7nFK9Qhjb6SR4JwqiOyWjPOPQk">
+                here
+              </a>
             </p>
           </div>
           {gap}
           <div class="card-footer" style={{ textAlign: "center" }}>
-            <Link to={`/projects/${project.project}`}> View Gallery</Link>
+            <Link to={`${PROJECTS}/${project.project}`}> View Gallery</Link>
           </div>
         </div>
       </div>
@@ -46,7 +50,7 @@ const Project = () => {
 
   return (
     <>
-      <CustomNavBar item="/projects" />
+      <CustomNavBar item={PROJECTS} />
       <section id="project" class="portfolio section-show" data-aos="fade-up">
         <div class="container">
           <p align="center">

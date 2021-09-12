@@ -1,4 +1,4 @@
-import data from "../utls/data";
+import data from "../utils/data";
 import AOS from "aos";
 import Service from "./Service";
 import Lightbox from "react-image-lightbox";
@@ -6,6 +6,7 @@ import "react-image-lightbox/style.css";
 import { useState } from "react";
 import CustomNavBar from "./CustomNavBar";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { EXTRA_CURRICULAR_ACTIVITIES } from "../utils/constants";
 
 const Activity = () => {
   AOS.init();
@@ -130,7 +131,7 @@ const Activity = () => {
 
   return (
     <>
-      <CustomNavBar item="/activity" />
+      <CustomNavBar item={EXTRA_CURRICULAR_ACTIVITIES} />
 
       <section id="activity" className="resume section-show">
         <div className="container">
@@ -160,7 +161,7 @@ const Activity = () => {
 
           <div className="services" data-aos="fade-up">
             <div class="section-title" data-aos="fade-right">
-              <h2>SAUPS Program Photographs</h2>
+              <h2>SAUPS PROGRAM PHOTOGRAPHS</h2>
             </div>
             <div className="row">{programs}</div>
           </div>
@@ -170,12 +171,14 @@ const Activity = () => {
           <div class="portfolio section-show">
             <div className="services">
               <div class="section-title">
-                <h2>Cultural Programs</h2>
+                <h2>CULTURAL PROGRAMS</h2>
               </div>
               <div className="row portfolio-container">{culturalPrograms}</div>
               <p>
-                To listen to some of the musical performances, <a href="">please visit
-                here</a>
+                To listen to some of the musical performances,{" "}
+                <a href="https://www.youtube.com/watch?v=_6GF87jH330&list=PL-Ab1DY7nFK9EGIXuC2S4hsSfustD3pep">
+                  please visit here
+                </a>
               </p>
             </div>
           </div>

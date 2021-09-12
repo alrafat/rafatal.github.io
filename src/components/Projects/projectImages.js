@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import Lightbox from "react-image-lightbox";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useParams } from "react-router-dom";
-import data from "../../utls/data";
+import { PROJECTS } from "../../utils/constants";
+import data from "../../utils/data";
 import CustomNavBar from "../CustomNavBar";
 
 const ProjectImages = (props) => {
@@ -117,7 +118,7 @@ const ProjectImages = (props) => {
 
   return (
     <>
-      <CustomNavBar item="/projects" />
+      <CustomNavBar item={PROJECTS} />
       <section
         id="photography"
         class="portfolio section-show"

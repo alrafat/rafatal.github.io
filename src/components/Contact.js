@@ -1,5 +1,5 @@
 import { useState } from "react";
-import data from "../utls/data";
+import data from "../utils/data";
 import CustomNavBar from "./CustomNavBar";
 
 import { Button } from "react-bootstrap";

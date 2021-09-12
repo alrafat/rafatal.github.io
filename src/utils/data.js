@@ -475,7 +475,7 @@ const data = {
     "An Entomology major, passionate Researcher, avid Art Photographer, Musician and Art Enthusiast",
   multi_professions: "Photographer",
   about:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "Saumik Dev was born in Sreemangal, Sylhet, Bangladesh. He is currently working as a “Research Associate” in the Department of Entomology, Sylhet Agricultural University, Sylhet, Bangladesh. Prior to that, he completed both his M.Sc. in Entomology and B.Sc. in Agriculture degrees from the Sylhet Agricultural University, Sylhet, Bangladesh. While pursuing the undergraduate degree, he developed keen interest in Entomology (the study of insects) that strive him to be an Entomologist upon completing the graduate program. As a short term goal, Mr. Dev has a strong desire and determination to pursue a Ph.D. in Entomology. He aspires to make some significant contribution in society by applying his knowledge and skills that he will be gaining. Outside academic matters, Mr. Dev has a great passion for Art Photography. Whenever free, he loves to explore the colorful moments of life, making him inclined to portray the lifestyle of common people. His art photographs were showcased in some photography exhibitions, with some international and national awards as well. Mr. Dev also holds a fascination for music and musical instruments. He loves to play Tabla and Guitar. He believes in the mantra “Diversity” and thus wishes to enrich himself with these kinds of multifaceted activities.",
   bio: "A MULTIFACETED ENTITY STRIVING FOR EXCELLENCE THROUGH CREATIVITY TO DEFINE THYSELF!",
   birthday: "4th Nov, 1992",
   address:
@@ -615,7 +615,7 @@ const data = {
     {
       title: "Research Associate",
       date: "September, 2020- Present",
-      institute: "Where ?",
+      institute: "",
       tasks: [
         "Project: Insect Pest Management Practices and Biosafety Status of Country Bean (Lablab purpureus L.) in Bangladesh” (BRBGP-2020-09).",
         "Approved by-Agriculture & Food System Institute (AFSI)",
@@ -625,7 +625,7 @@ const data = {
     {
       title: "Graduate Research Assistant",
       date: "July, 2017- December, 2018",
-      institute: "Where ?",
+      institute: "",
       tasks: [
         "Project: Insect as a Food: Bangladesh Perspectives",
         "Funded by- University Grants Commission (UGC), Bangladesh.",
@@ -639,11 +639,89 @@ const data = {
       date: "July, 2017- December, 2018",
       institute:
         "Department of Entomology, Sylhet Agricultural University, Bangladesh",
-      tasks: ["Say something more about your task or activities."],
+      tasks: [],
     },
   ],
 
-  organizational_experiences: [],
+  organizational_experiences: [
+    {
+      program:
+        "ART OF LIGHT-SAUPS 2nd National Photography Exhibition and Competition-2019",
+      position: "Host / Convener",
+      date: "2019",
+    },
+    {
+      program:
+        "Souvenir, “ART OF LIGHT-SAUPS 2nd  National Photography Exhibition and Competition-2019”",
+      position: "Editor-in-Chief",
+      date: "2019",
+    },
+    {
+      program:
+        "Prize Giving Ceremony, “ART OF LIGHT-SAUPS 2nd  National Photography Exhibition and Competition-2019”",
+      position: "Anchor",
+      date: "2019",
+    },
+    {
+      program: "“Photo Walk” in Sreemangal, Sylhet by SAUPS",
+      position: "Host",
+      date: "2019",
+    },
+    {
+      program: "SAUPS 1st Photography Workshop",
+      position: "Instructor",
+      date: "2018",
+    },
+    {
+      program: "SET OUT-2, Intra-University Photography Exhibition by SAUPS",
+      position: "Host / Convener",
+      date: "2018",
+    },
+    {
+      program:
+        "Oghraner Sougath, Cultural Program, Krishnachura Cultural Organization ",
+      position: "Event Executive",
+      date: "2018",
+    },
+    {
+      program: "SAUPS 1st Photography Workshop",
+      position: "Instructor",
+      date: "2018",
+    },
+    {
+      program: "Cleaning Eco Park area, Sylhet by PRADHIKAR",
+      position: "Volunteer",
+      date: "2017",
+    },
+    {
+      program: "SAUPS 1st National Photography Exhibition and Competition-2017",
+      position: "Host/ Convener",
+      date: "2017",
+    },
+    {
+      program:
+        "Souvenir, SAUPS 1st National Photography Exhibition and Competition-2017",
+      position: "Editor-in-Chief",
+      date: "2017",
+    },
+    {
+      program:
+        "Nobodhoni, Cultural Program, Krishnachura Cultural Organization",
+      position: "Event Executive",
+      date: "2017",
+    },
+    {
+      program: "SET OUT-1, Intra-University Photography Exhibition by SAUPS",
+      position: "Host/ Convener",
+      date: "2016",
+    },
+
+    {
+      program: "Agriculture Festival ",
+      position: "Event Executive",
+      date: "2016",
+    },
+  ],
 
   technical_skills: [
     {
@@ -805,7 +883,8 @@ const data = {
       description:
         "This project documented aspects of entomophagy and entomotherapy of ethnic people in Bangladesh as this practice is believed to ensure future food security. A comprehensive survey was conducted involving six insect-consuming ethnic groups: Garo, Chakma, Tanchangya, Marma, Mro, and Tripura. Total data of 150 respondents were taken by selecting single member from each family, with a total of 25 families per ethnic groups. Data were analyzed by SPSS Statistical software. A total of 36 insect species of 19 families and 7 orders were consumed by them. In terms of species, those of the Coleoptera ranked highest (14), followed by Hymenoptera (7), Orthoptera (5), Hemiptera (5) and Blattodea (3 species); one species each belonged to Ephemeroptera and Odonata. The field cricket (Brachytrupes sp.), short-horned grasshopper (Oxya sp.) and giant water bug (Lethocerus indicus) were most preferred, reaching respective acceptance levels of 84, 83, and 79% by the respondents of all ethnic groups taken together. The total number of species used as human food by the Chakma, Marma, Mro, Tanchangya, Tripura, and Garo was 32, 22, 29, 21, 26, and 14, respectively. Nine species were used to treat coughs, fevers, nocturnal emissions, burning and gastroenteritis",
 
-      youtube: ["sas", "asa", "sas"],
+      youtube:
+        "https://www.youtube.com/watch?v=1FihCKG0RHo&list=PL-Ab1DY7nFK9Qhjb6SR4JwqiOyWjPOPQk",
     },
     {
       project: "Insect Pest Management Practices and Biosafety",
@@ -814,43 +893,55 @@ const data = {
       description:
         "This project is undertaken to create a platform for future assessment of the necessity for the development of ecosystem viable Genetically Engineered country bean plant through using the base line information. The specific objectives include determining the current insect pest status and management practices in country bean production system. Another important objective is to assess the biosafety situation in the country bean ecosystem. So far, we have collected basic information regarding the aforementioned details from 300 respondents across the selected areas throughout the country.",
 
-      youtube: ["sas", "asa", "sas"],
+      youtube: "",
     },
   ],
   achievements: [
     {
-      title: "National Science & Technology (NST) Fellowship for MS Thesis",
-      issuedBy: "Ministry of Science and Technology, Bangladesh",
-      position: "",
-      date: "2017-2018",
-      detail: "",
-      image:
-        "https://www.daily-sun.com/assets/news_images/2019/04/11/Daily-sun-11-04-2019-11.jpg",
-    },
-    {
-      title: "National Photography Award",
-      issuedBy: "Unknown",
-      position: "",
-      date: "2018",
-      detail: "",
-      image:
-        "https://www.worldphoto.org/sites/default/files/gallery/images/2013057/cbda9962b43e64930eaa7fa4f0867265.IMG_3777.jpg",
-    },
-    {
-      title: "International Photography Award",
-      issuedBy: "Unknown",
+      title: '"National Science & Technology-(NST) Fellowship” for MS Research',
+      issuedBy:
+        "Ministry of Science and Technology, Government of the people's republic of Bangladesh",
       position: "",
       date: "2017",
       detail: "",
-      image:
-        "https://www.daily-sun.com/assets/news_images/2019/04/11/Daily-sun-11-04-2019-11.jpg",
+      image: "",
+    },
+    {
+      title:
+        "“Honorable Mention” Award (Lifestyle Photography Category) in BFPA International Photo Contest",
+      issuedBy: "Bangladesh Freelance Photographer’s Association",
+      position: "",
+      date: "2017",
+      detail: "",
+      image: "",
+    },
+    {
+      title:
+        "2nd Prize (Camera Category) in Photography Exhibition and Competition “Photographic Communion”",
+      issuedBy:
+        "Leading University Photographic Society-(LUPS), Leading University, Bangladesh",
+      position: "",
+      date: "2018",
+      detail: "",
+      image: "",
+    },
+    {
+      title: "1st Prize, Tabla Playing Competition (Secondary Category)",
+      issuedBy: "Upazila Parishad, Sreemangal, Moulvibazar",
+      position: "",
+      date: "2008",
+      detail: "",
+      image: "",
     },
   ],
-  facebook: "",
-  linkedIn: "",
-  twitter: "",
-  instagram: "",
+  facebook: "https://www.facebook.com/saumik.dev/",
+  linkedIn: "https://www.linkedin.com/in/saumik-dev-2b313b217/",
+  twitter: "https://twitter.com/saumik_dev",
   skype: "",
+  flickr: "https://www.flickr.com/photos/151807693@N04/",
+  researchGate: "https://www.researchgate.net/profile/Saumik-Dev",
+  googleScholar: "https://scholar.google.com/citations?hl=en&user=as6QYQ0AAAAJ",
+  youTube: "https://www.youtube.com/channel/UCED60qcoBE9uEzay1kuPLLQ/featured",
 };
 
 export default data;

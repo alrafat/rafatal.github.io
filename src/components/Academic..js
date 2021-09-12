@@ -1,6 +1,5 @@
-import { Row, Col } from "react-bootstrap";
-import data from "../utls/data";
-import Skill from "./About/Skill";
+import { ACADEMIC } from "../utils/constants";
+import data from "../utils/data";
 import CustomNavBar from "./CustomNavBar";
 
 const Academic = () => {
@@ -94,7 +93,7 @@ const Academic = () => {
 
   return (
     <>
-      <CustomNavBar item="/academic" />
+      <CustomNavBar item={ACADEMIC} />
       <section id="resume" class="resume section-show" data-aos="fade-up">
         <div class="container">
           <p align="center">

@@ -1,5 +1,6 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import data from "../utls/data";
+import { AWARDS_ACHIEVEMENTS } from "../utils/constants";
+import data from "../utils/data";
 import CustomNavBar from "./CustomNavBar";
 
 const Achievements = () => {
@@ -9,52 +10,39 @@ const Achievements = () => {
     const image = achievement.image.toString();
     return (
       <div
-        className="container"
-        style={{ backgroundColor: "rgba(99,211,111,0.5)", margin: "5px" }}
+        class="container col-sm-5 justify-content-evenly"
+        style={{
+          backgroundColor: "rgb(99,211,111,0.6)",
+          margin: "5px",
+          padding: "20px",
+        }}
       >
+        <h3
+          class="card-title"
+          align="center"
+          style={{ color: "white", fontWeight: "bold" }}
+        >
+          {achievement.title}
+        </h3>
+
+        <hr></hr>
         <div className="row">
-          <div class="col-lg-6 d-flex justify-content-center">
-            <LazyLoadImage
-              className="card-img-top"
-              src={image}
-              alt={achievement.title}
-              style={{ width: "100%" }}
-            />
-          </div>
-          <div
-            class="col-lg-6 d-flex justify-content-center"
-            // style={{ backgroundColor: "#7AADC2" }}
-          >
-            <div>
-              <h3
-                class="card-title"
-                align="center"
-                style={{ color: "white", fontWeight: "bold" }}
-              >
-                {achievement.title}
-              </h3>
-
-              <hr></hr>
-
-              <h5 className="pull-left">By {achievement.issuedBy}</h5>
-
-              <h5 className="pull-right"> {achievement.date}</h5>
-
-              {gap}
-
-              <p class="card-text" style={{ color: "black" }}>
-                {achievement.detail}
-              </p>
-            </div>
-          </div>
+          <div className="col-10">By {achievement.issuedBy}</div>
+          <div className="col-2">{achievement.date}</div>
         </div>
+
+        {gap}
+
+        <p class="card-text" style={{ color: "black" }}>
+          {achievement.detail}
+        </p>
       </div>
     );
   });
 
   return (
     <>
-      <CustomNavBar item="/award-achievements" />
+      <CustomNavBar item={AWARDS_ACHIEVEMENTS} />
       <section id="project" class="portfolio section-show" data-aos="fade-up">
         <div class="container">
           <p align="center">
@@ -66,7 +54,7 @@ const Achievements = () => {
             <h2>AWARDS & ACHIEVEMENTS</h2>
           </div>
 
-          <div class="row">{achievements}</div>
+          <div class="row justify-content-center">{achievements}</div>
         </div>
       </section>
     </>

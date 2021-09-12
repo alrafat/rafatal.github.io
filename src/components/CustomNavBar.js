@@ -1,75 +1,109 @@
 import { Link } from "react-router-dom";
-import data from "../utls/data";
+import data from "../utils/data";
+import {
+  HOME,
+  ACADEMIC,
+  AWARDS_ACHIEVEMENTS,
+  EXPERIENCES,
+  EXTRA_CURRICULAR_ACTIVITIES,
+  RESEARCH_EXPERIENCES,
+  ABOUT,
+  GALLERY,
+  PROJECTS,
+  ART_PHOTOGRAPHY,
+} from "../utils/constants";
 
 const CustomNavBar = (props) => {
+  console.log(props.item === HOME);
   return (
     <header
       id="header"
-      class={props.item === "/" ? "header-tops" : "header-tops header-top"}
+      class={props.item === HOME ? "header-tops" : "header-tops header-top"}
     >
       <div class="container" style={{ overflow: "hidden" }}>
         <h1 data-aos="fade-right">
-          <Link to="/">{data.name}</Link>
+          <Link to={HOME}>{data.name}</Link>
         </h1>
         <h2 data-aos="fade-left">{data.profession}</h2>
 
         <nav class="nav-menu d-none d-lg-block" data-aos="fade-up">
           <ul>
-            <li class={props.item == "/" ? "active" : ""}>
-              <Link to="/">Home</Link>
+            <li class={props.item === HOME ? "active" : ""}>
+              <Link to={HOME}>Home</Link>
             </li>
-            <li class={props.item == "/academic" ? "active" : ""}>
-              <Link to="/academic">Academic</Link>
+            <li class={props.item === ACADEMIC ? "active" : ""}>
+              <Link to={ACADEMIC}>Academic</Link>
             </li>
-            <li class={props.item == "/research-experience" ? "active" : ""}>
-              <Link to="/research-experience">Research Experience</Link>
-            </li>
-
-            <li class={props.item == "/projects" ? "active" : ""}>
-              <Link to="/projects">Projects</Link>
+            <li class={props.item === RESEARCH_EXPERIENCES ? "active" : ""}>
+              <Link to={RESEARCH_EXPERIENCES}>Research Experience</Link>
             </li>
 
-            <li class={props.item == "/experiences" ? "active" : ""}>
-              <Link to="/experiences">Experiences</Link>
+            <li class={props.item === PROJECTS ? "active" : ""}>
+              <Link to={PROJECTS}>Projects</Link>
             </li>
 
-            <li class={props.item == "/art-photography" ? "active" : ""}>
-              <Link to="/art-photography">Art Photography</Link>
+            <li class={props.item === EXPERIENCES ? "active" : ""}>
+              <Link to={EXPERIENCES}>Experiences</Link>
             </li>
 
-            <li class={props.item == "/award-achievements" ? "active" : ""}>
-              <Link to="/award-achievements">Awards and Achievements</Link>
+            <li class={props.item === ART_PHOTOGRAPHY ? "active" : ""}>
+              <Link to={ART_PHOTOGRAPHY}>Art Photography</Link>
             </li>
 
-            <li class={props.item == "/activity" ? "active" : ""}>
-              <Link to="/activity">Extra-Curricular Activities</Link>
+            <li class={props.item === AWARDS_ACHIEVEMENTS ? "active" : ""}>
+              <Link to={AWARDS_ACHIEVEMENTS}>Awards and Achievements</Link>
             </li>
 
-            <li class={props.item == "/gallery" ? "active" : ""}>
-              <Link to="/gallery">Gallery</Link>
+            <li
+              class={props.item === EXTRA_CURRICULAR_ACTIVITIES ? "active" : ""}
+            >
+              <Link to={EXTRA_CURRICULAR_ACTIVITIES}>
+                Extra-Curricular Activities
+              </Link>
             </li>
 
-            <li class={props.item == "/about" ? "active" : ""}>
-              <Link to="/about">About</Link>
+            <li class={props.item === GALLERY ? "active" : ""}>
+              <Link to={GALLERY}>Gallery</Link>
+            </li>
+
+            <li class={props.item === ABOUT ? "active" : ""}>
+              <Link to={ABOUT}>About</Link>
             </li>
           </ul>
         </nav>
 
         <div class="social-links" data-aos="fade-down">
-          <a href={data.twitter} target="blank" class="twitter">
-            <i class="icofont-twitter"></i>
-          </a>
-          <a href={data.facebook} target="blank" class="facebook">
-            <i class="icofont-facebook"></i>
-          </a>
-          <a href={data.instagram} target="blank" class="instagram">
-            <i class="icofont-instagram"></i>
-          </a>
-          <a href={data.skype} target="blank" class="google-plus">
-            <i class="icofont-skype"></i>
+          <a href={`mailto:${data.email}`} target="blank">
+            <i class="icofont-email"></i>
           </a>
           <a href={data.linkedIn} target="blank" class="linkedin">
             <i class="icofont-linkedin"></i>
+          </a>
+          <a href={data.researchGate} target="blank">
+            <i class="fab fa-researchgate"></i>
+          </a>
+          <a href={data.googleScholar} target="blank">
+            <i class="ai ai-google-scholar-square"></i>
+          </a>
+
+          <a href={data.youTube} target="blank">
+            <i class="icofont-youtube"></i>
+          </a>
+
+          <a href={data.facebook} target="blank" class="facebook">
+            <i class="icofont-facebook"></i>
+          </a>
+
+          <a href={data.flickr} target="blank">
+            <i
+              class="icofont-flikr"
+              aria-hidden="true"
+              style={{ color: "white" }}
+            ></i>
+          </a>
+
+          <a href={data.twitter} target="blank" class="twitter">
+            <i class="icofont-twitter"></i>
           </a>
         </div>
       </div>

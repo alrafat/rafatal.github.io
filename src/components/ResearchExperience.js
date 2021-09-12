@@ -1,4 +1,5 @@
-import data from "../utls/data";
+import { RESEARCH_EXPERIENCES } from "../utils/constants";
+import data from "../utils/data";
 import CustomNavBar from "./CustomNavBar";
 
 const ResearchExperience = () => {
@@ -131,7 +132,7 @@ const ResearchExperience = () => {
 
   return (
     <>
-      <CustomNavBar item="/research-experience" />
+      <CustomNavBar item={RESEARCH_EXPERIENCES} />
       <section class="resume section-show" data-aos="fade-up">
         <div class="container">
           <p align="center">

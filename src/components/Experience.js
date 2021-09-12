@@ -1,5 +1,6 @@
 import { Row, Col } from "react-bootstrap";
-import data from "../utls/data";
+import { EXPERIENCES } from "../utils/constants";
+import data from "../utils/data";
 import CustomNavBar from "./CustomNavBar";
 
 const Experience = () => {
@@ -86,11 +87,34 @@ const Experience = () => {
     );
   });
 
+  const organizationalExp = data.organizational_experiences.map((item) => {
+    return (
+      <div className="col-lg-6">
+        <div className="row" style={{ padding: "10px" }}>
+          <div className="resume-item">
+            <div
+              style={{
+                // backgroundColor: "#F2F2F2",
+                padding: "10px",
+              }}
+            >
+              <h4>{item.position}</h4>
+              <h5>{item.date}</h5>
+              <p>
+                <em>{item.program}</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  });
+
   const gap = <div style={{ height: "50px", display: "block" }}></div>;
 
   return (
     <>
-      <CustomNavBar item="/experiences" />
+      <CustomNavBar item={EXPERIENCES} />
       <section id="resume" class="resume section-show" data-aos="fade-up">
         <div class="container">
           <p align="center">
@@ -137,7 +161,7 @@ const Experience = () => {
               </div>
 
               <div className="row" style={{ padding: "10px" }}>
-                {/* {trainingItems} */}
+                {organizationalExp}
               </div>
             </div>
           </div>
