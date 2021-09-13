@@ -497,7 +497,7 @@ const data = {
   education: [
     {
       degree: "Master of Science (M.Sc.) in Entomology",
-      date: "Feb, 2019",
+      date: "February, 2019",
       varsity:
         "Department of Entomology, Sylhet Agricultural University, Bangladesh",
 
@@ -507,7 +507,7 @@ const data = {
     },
     {
       degree: "Bachelor of Science (B.Sc.) in Agriculture (Honours)",
-      date: "Dec, 2016",
+      date: "December, 2016",
       varsity:
         "Faculty of Agriculture, Sylhet Agricultural University, Bangladesh",
       about: "",
@@ -579,7 +579,7 @@ const data = {
         },
         {
           name: "Writing",
-          score: "7.0",
+          score: "6.5",
         },
         {
           name: "Speaking",
@@ -688,11 +688,7 @@ const data = {
       position: "Event Executive",
       date: "2018",
     },
-    {
-      program: "SAUPS 1st Photography Workshop",
-      position: "Instructor",
-      date: "2018",
-    },
+
     {
       program: "Cleaning Eco Park area, Sylhet by PRADHIKAR",
       position: "Volunteer",

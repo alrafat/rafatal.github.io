@@ -36,10 +36,10 @@ const Academic = () => {
       );
     });
 
-    const tableData = table.fields.map((data) => {
+    const tableData = table.fields.map((data, index) => {
       return (
         <td style={{ textAlign: "center", color: "white" }}>
-          <p>{data.score}</p>
+          {index === 0 ? <b>{data.score}</b> : <p>{data.score}</p>}
         </td>
       );
     });

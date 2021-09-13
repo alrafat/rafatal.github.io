@@ -150,7 +150,7 @@ const ResearchExperience = () => {
           {/* Paper and Conference  */}
           {gap}
           <div className="row">
-            <div className="col-lg-12" data-aos="fade-up">
+            <div className="col-lg-12">
               <div class="section-title">
                 <h2>JOURNAL PUBLICATION</h2>
               </div>

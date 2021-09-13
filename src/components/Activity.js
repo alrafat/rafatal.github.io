@@ -173,13 +173,13 @@ const Activity = () => {
               <div class="section-title">
                 <h2>CULTURAL PROGRAMS</h2>
               </div>
-              <div className="row portfolio-container">{culturalPrograms}</div>
-              <p>
+              <p align="center" style={{ padding: "4px" }}>
                 To listen to some of the musical performances,{" "}
                 <a href="https://www.youtube.com/watch?v=_6GF87jH330&list=PL-Ab1DY7nFK9EGIXuC2S4hsSfustD3pep">
                   please visit here
                 </a>
               </p>
+              <div className="row portfolio-container">{culturalPrograms}</div>
             </div>
           </div>
 
@@ -189,9 +189,9 @@ const Activity = () => {
               nextSrc={images[(photoIndex + 1) % images.length]}
               prevSrc={images[(photoIndex + images.length - 1) % images.length]}
               onCloseRequest={() => setIsOpen(false)}
-              onMovePrevRequest={() =>
-                setPhotoIndex(photoIndex + images.length - 1) % images.length
-              }
+              onMovePrevRequest={() => {
+                setPhotoIndex((photoIndex + images.length - 1) % images.length);
+              }}
               onMoveNextRequest={() =>
                 setPhotoIndex((photoIndex + 1) % images.length)
               }

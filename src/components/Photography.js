@@ -147,7 +147,7 @@ const Photography = () => {
               prevSrc={images[(photoIndex + images.length - 1) % images.length]}
               onCloseRequest={() => setIsOpen(false)}
               onMovePrevRequest={() =>
-                setPhotoIndex(photoIndex + images.length - 1) % images.length
+                setPhotoIndex((photoIndex + images.length - 1) % images.length)
               }
               onMoveNextRequest={() =>
                 setPhotoIndex((photoIndex + 1) % images.length)
