@@ -10,7 +10,7 @@ const Achievements = () => {
     const image = achievement.image.toString();
     return (
       <div
-        class="container card justify-content-evenly"
+        class="container card col-12 justify-content-evenly"
         style={{
           backgroundColor: "rgb(99,211,111,0.4)",
           margin: "5px",

@@ -9,6 +9,12 @@ const Project = () => {
 
   const projects = data.projects.map((project) => {
     const image = project.defaultImage.toString();
+    const linkShareDiv = (
+      <p>
+        You can enjoy some interesting video from Edible Insects research from{" "}
+        <a href={project.youtube}>here</a>
+      </p>
+    );
     return (
       <div class="col-lg-12 d-flex justify-content-center">
         <div class="card" style={{ margin: "10px" }}>
@@ -32,11 +38,9 @@ const Project = () => {
             {gap}
 
             <p class="card-text" style={{ color: "black" }}>
-              {project.description} You can enjoy some interesting video from
-              Edible Insects research from{" "}
-              <a href="https://www.youtube.com/playlist?list=PL-Ab1DY7nFK9Qhjb6SR4JwqiOyWjPOPQk">
-                here
-              </a>
+              {project.description}
+
+              {project.youtube !== "" ? linkShareDiv : ""}
             </p>
           </div>
           {gap}
