@@ -880,7 +880,7 @@ const data = {
     {
       project: "Insect as a Food: Bangladesh Perspectives",
       defaultImage:
-        "assets/photos/Project Work Photographs/Insect as a Food: Bangladesh Perspectives/Edible Insect (Market, Collection, Consumption)/EI-MCC-01.JPG",
+        "assets/photos/Project Work Photographs/Insect as a Food: Bangladesh Perspectives/Edible Insect (Market, Collection, Consumption)/EI-MCC-10.JPG",
       description:
         "This project documented aspects of entomophagy and entomotherapy of ethnic people in Bangladesh as this practice is believed to ensure future food security. A comprehensive survey was conducted involving six insect-consuming ethnic groups: Garo, Chakma, Tanchangya, Marma, Mro, and Tripura. Total data of 150 respondents were taken by selecting single member from each family, with a total of 25 families per ethnic groups. Data were analyzed by SPSS Statistical software. A total of 36 insect species of 19 families and 7 orders were consumed by them. In terms of species, those of the Coleoptera ranked highest (14), followed by Hymenoptera (7), Orthoptera (5), Hemiptera (5) and Blattodea (3 species); one species each belonged to Ephemeroptera and Odonata. The field cricket (Brachytrupes sp.), short-horned grasshopper (Oxya sp.) and giant water bug (Lethocerus indicus) were most preferred, reaching respective acceptance levels of 84, 83, and 79% by the respondents of all ethnic groups taken together. The total number of species used as human food by the Chakma, Marma, Mro, Tanchangya, Tripura, and Garo was 32, 22, 29, 21, 26, and 14, respectively. Nine species were used to treat coughs, fevers, nocturnal emissions, burning and gastroenteritis.",
 
@@ -890,7 +890,7 @@ const data = {
     {
       project: "Insect Pest Management Practices and Biosafety",
       defaultImage:
-        "assets/photos/Project Work Photographs/Insect as a Food: Bangladesh Perspectives/Survey-Tongchangya Photographs/S-Tong.P-01.JPG",
+        "assets/photos/Project Work Photographs/Insect Pest Management Practices and Biosafety/Project-IPM-09.JPG",
       description:
         "This project is undertaken to create a platform for future assessment of the necessity for the development of ecosystem viable Genetically Engineered country bean plant through using the base line information. The specific objectives include determining the current insect pest status and management practices in country bean production system. Another important objective is to assess the biosafety situation in the country bean ecosystem. So far, we have collected basic information regarding the aforementioned details from 300 respondents across the selected areas throughout the country.",
 
