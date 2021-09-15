@@ -15,8 +15,8 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") no-repeat;
-  filter: brightness(46%);
+  background: #040404 url("../img/bg.jpg") center no-repeat;
+  filter: brightness(40%);
   background-size: cover;
   left: 0;
   right: 0;
