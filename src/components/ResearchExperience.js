@@ -138,7 +138,7 @@ const ResearchExperience = () => {
           <p align="center">
             <q className="quote"> UNRAVELING THE MYSTERY </q>
           </p>
-          {gap}
+          {/* {gap}
           <div className="row">
             <div class="interests container">
               <div class="section-title">
@@ -146,7 +146,7 @@ const ResearchExperience = () => {
               </div>
               <div class="row">{researchInterests}</div>
             </div>
-          </div>
+          </div> */}
           {/* Paper and Conference  */}
           {gap}
           <div className="row">
