@@ -13,6 +13,8 @@ import Gallery from "../components/Gallery";
 import Photography from "../components/Photography";
 import ProjectImages from "../components/Projects/projectImages";
 import Achievements from "../components/Achievement";
+import { useEffect } from "react";
+import { useLocation } from "react-router";
 import {
   ABOUT,
   ACADEMIC,
@@ -28,6 +30,15 @@ import {
 
 function App() {
   Aos.init();
+
+  const { pathname } = useLocation();
+  useEffect(
+    function () {
+      window.scrollTo(0, 0);
+    },
+    [pathname]
+  );
+
   return (
     <Switch>
       <Route path={HOME} exact render={() => <CustomNavBar item={HOME} />} />

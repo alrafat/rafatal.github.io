@@ -105,6 +105,10 @@ const CustomNavBar = (props) => {
           <a href={data.twitter} target="blank" class="twitter">
             <i class="icofont-twitter"></i>
           </a>
+
+          <a href={data.instagram} target="blank" class="instagram">
+            <i class="icofont-instagram"></i>
+          </a>
         </div>
       </div>
     </header>

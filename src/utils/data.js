@@ -475,9 +475,9 @@ const data = {
     "An Entomology major, passionate Researcher, avid Art Photographer, Musician and Art Enthusiast",
   multi_professions: "Photographer",
   about: [
-    "Saumik Dev was born in Sreemangal, Sylhet, Bangladesh. He is currently working as a “Research Associate” in the Department of Entomology, Sylhet Agricultural University, Sylhet, Bangladesh.",
-    "Prior to that, he completed both his M.Sc. in Entomology and B.Sc. in Agriculture degrees from the Sylhet Agricultural University, Sylhet, Bangladesh. While pursuing the undergraduate degree, he developed keen interest in Entomology (the study of insects) that strive him to be an Entomologist upon completing the graduate program.",
-    "As a short term goal, Mr. Dev has a strong desire and determination to pursue a Ph.D. in Entomology. He aspires to make some significant contribution in society by applying his knowledge and skills that he will be gaining.",
+    "Saumik Dev was born in Sreemangal, Sylhet, Bangladesh. Starting from Fall 2022 (August, 2022), he is going to pursue his Doctoral degree - PhD in Entomology (Specialization in Medical/Public Health Entomology on Infectious Diseases) in the Department of Entomology at Virginia Tech, USA (Officially known as Virginia Polytechnic Institute and State University, Blacksburg, Virginia, USA). His PhD research will be on the development of novel muscarinic acetylcholine receptor insecticides and synergists to control the malaria mosquito (Anopheles gambiae).",
+    "Earlier, Mr. Dev worked as a “Research Associate” in the Department of Entomology, Sylhet Agricultural University, Sylhet, Bangladesh. Prior to that, he completed both his M.Sc. in Entomology and B.Sc. in Agriculture degrees from Sylhet Agricultural University, Sylhet, Bangladesh. While pursuing the undergraduate degree, he developed keen interest in Entomology (the study of insects) that strive him to be an Entomologist upon completing the MS graduate program.",
+    "As a short term goal, Mr. Dev has a strong desire and determination to pursue Ph.D. in Entomology. He aspires to make some significant contribution in society by applying his knowledge and skills that he will be gaining during his PhD journey.",
     "Outside academic matters, Mr. Dev has a great passion for Art Photography. Whenever free, he loves to explore the colorful moments of life, making him inclined to portray the lifestyle of common people. His art photographs were showcased in some photography exhibitions, with some international and national awards as well.",
     "Mr. Dev also holds a fascination for music and musical instruments. He loves to play Tabla and Guitar. He believes in the mantra “Diversity” and thus wishes to enrich himself with these kinds of multifaceted activities.",
   ],
@@ -503,7 +503,7 @@ const data = {
 
       about:
         "Thesis Title: Status of edible insects in some ethnic groups of Bangladesh",
-      cgpa: "3.750 out of 4.00 (WES: 3.82)",
+      cgpa: " 3.82 out of 4.00 (WES, USA)",
     },
     {
       degree: "Bachelor of Science (B.Sc.) in Agriculture (Honours)",
@@ -511,7 +511,7 @@ const data = {
       varsity:
         "Faculty of Agriculture, Sylhet Agricultural University, Bangladesh",
       about: "",
-      cgpa: "3.491 out of 4.00 (WES: 3.55)",
+      cgpa: " 3.55 out of 4.00 (WES, USA) ",
     },
   ],
   training_experiences: [
@@ -579,7 +579,7 @@ const data = {
         },
         {
           name: "Writing",
-          score: "6.5",
+          score: "7.0",
         },
         {
           name: "Speaking",
@@ -614,12 +614,39 @@ const data = {
         },
       ],
     },
+
+    {
+      standard_name: "Duolingo EnglishTest (DET)",
+      date: "June 23, 2022",
+      fields: [
+        {
+          name: "Overall Score",
+          score: "125",
+        },
+        {
+          name: "Literacy",
+          score: "130",
+        },
+        {
+          name: "Comprehension",
+          score: "125",
+        },
+        {
+          name: "Conversation",
+          score: "120",
+        },
+        {
+          name: "Production",
+          score: "120",
+        },
+      ],
+    },
   ],
 
   professional_experiences: [
     {
       title: "Research Associate",
-      date: "September, 2020- Present",
+      date: "October, 2020-Present",
       institute: "",
       tasks: [
         "Project: Insect Pest Management Practices and Biosafety Status of Country Bean (Lablab purpureus L.) in Bangladesh” (BRBGP-2020-09).",
@@ -649,6 +676,18 @@ const data = {
   ],
 
   organizational_experiences: [
+    {
+      program:
+        "ART OF LIGHT-SAUPS 3rd National Photography Exhibition and Competition-2021",
+      position: "Host / Convener",
+      date: "2021",
+    },
+    {
+      program:
+        "Souvenir, ART OF LIGHT-SAUPS 3rd National Photography Exhibition and Competition-2021",
+      position: "Editor-in-Chief",
+      date: "2021",
+    },
     {
       program:
         "ART OF LIGHT-SAUPS 2nd National Photography Exhibition and Competition-2019",
@@ -798,7 +837,7 @@ const data = {
         "Dev. S., Hassan, K., Claes, J., Mozahid, M.N., Khatun, H. and Mondal, M.F",
       link: "https://doi.org/10.3920/JIFF2020.0038",
       journal: "Q1 Journal",
-      impact_factor: "Impact Factor: 3.484",
+      impact_factor: "Impact Factor: 5.099",
     },
   ],
 
@@ -840,7 +879,7 @@ const data = {
     {
       title: "Status of edible insects in some ethnic groups of Bangladesh",
       supervisor:
-        "Supervisor: Dr. Md. Fuad Mondal, Associate Professor, Department of Entomology, Sylhet Agricultural University, Sylhet",
+        "Supervisor: Dr. Md. Fuad Mondal, Professor, Department of Entomology, Sylhet Agricultural University, Sylhet",
       detail: [
         "Information of 150 respondents from six ethnic groups were taken including perceptions and socio-economic factors regarding insects consumption",
 
@@ -936,6 +975,7 @@ const data = {
     },
   ],
   facebook: "https://www.facebook.com/saumik.dev/",
+  instagram: "https://www.instagram.com/saumik_dev/",
   linkedIn: "https://www.linkedin.com/in/saumik-dev-2b313b217/",
   twitter: "https://twitter.com/saumik_dev",
   skype: "",
