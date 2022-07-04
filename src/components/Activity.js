@@ -150,7 +150,7 @@ const Activity = () => {
               <h3 className="resume-title">LEADERSHIP</h3>
               {leadItems}
             </div>
-            <div className="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div className="col-lg-6" data-aos-delay="100">
               <h3 className="resume-title">EXTRA-CURRICULAR ACTIVITIES</h3>
               {activityItems}
             </div>
@@ -159,8 +159,8 @@ const Activity = () => {
 
           {gap}
 
-          <div className="services" data-aos="fade-up">
-            <div class="section-title" data-aos="fade-right">
+          <div className="services">
+            <div class="section-title">
               <h2>SAUPS PROGRAM PHOTOGRAPHS</h2>
             </div>
             <div className="row">{programs}</div>

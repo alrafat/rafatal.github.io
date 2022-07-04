@@ -50,6 +50,7 @@ const Academic = () => {
           paddingBottom: "10px",
           marginBottom: "10px",
           color: "green",
+          overflowX: "auto",
         }}
       >
         <h4 align="center" className="test-items">
@@ -125,7 +126,6 @@ const Academic = () => {
               <div class="section-title">
                 <h2>STANDARDIZED TEST SCORES</h2>
               </div>
-
               {scoreTables}
             </div>
           </div>

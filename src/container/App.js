@@ -32,6 +32,7 @@ function App() {
   Aos.init();
 
   const { pathname } = useLocation();
+  console.log(pathname);
   useEffect(
     function () {
       window.scrollTo(0, 0);

@@ -14,7 +14,7 @@ import {
 } from "../utils/constants";
 
 const CustomNavBar = (props) => {
-  console.log(props.item === HOME);
+  console.log(props.item);
   return (
     <header
       id="header"
