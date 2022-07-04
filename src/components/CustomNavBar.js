@@ -72,14 +72,7 @@ const CustomNavBar = (props) => {
           </ul>
         </nav>
 
-        <div
-          class="social-links"
-          data-aos="fade-down"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-          }}
-        >
+        <div class="social-links" data-aos="fade-down">
           <a href={`mailto:${data.email}`} target="blank">
             <i class="icofont-email"></i>
           </a>
