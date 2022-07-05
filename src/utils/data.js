@@ -716,7 +716,7 @@ const data = {
     },
 
     {
-      standard_name: "Duolingo EnglishTest (DET)",
+      standard_name: "Duolingo English Test (DET)",
       date: "June 23, 2022",
       fields: [
         {
