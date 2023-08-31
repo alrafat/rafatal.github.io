@@ -570,7 +570,7 @@ const culturalPrograms = [
 ];
 
 const data = {
-  name: "Saumik Dev",
+  name: "Abdulla Al Baki Rafat",
   profession:
     "An Entomology major, passionate Researcher, avid Art Photographer, Musician and Art Enthusiast",
   multi_professions: "Photographer",
